@@ -4,16 +4,48 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <meta name="robots" content="noindex" />
+    <title>The Clay Play</title>
   </head>
-  <body class="grid place-items-center p-8">
-    <h1 class="text-xl font-bold text-emerald-700">Tailwind Template E2022</h1>
-    <p class="text-emerald-500">
-      Powered by <a href="https://vitejs.dev/guide">Vite</a>
-    </p>
-    <img src="img/vite.svg" alt="Vite Logo" />
+  <body>
+    <!-- ------- Navigation ------- -->
+    <header>
+      <section>
+        <div class="banner">
+          <nav class="flex flex-wrap items-center justify-between">
+            <ul class="flex">
+              <li>CURRENCY I</li>
+              <li>DKK</li>
+            </ul>
+            <a class="logo" href="index.html"
+              >THE CLAY PLAY <br />
+              HANDMADE CERAMICS />
+            </a>
+            <ul class="flex h-5 w-5">
+              <img src="img/searchicon.png" alt="Search Icon" />
+              <img src="img/profileicon.png" alt="Profile Icon" />
+              <img src="img/favouriteicon.png" alt="Favourite Icon" />
+              <img src="img/carticon.png" alt="Cart Icon" />
+            </ul>
+          </nav>
 
-    <script type="module" src="js/main.js"></script>
+          <button class="desktop:hidden">
+            <img src="img/burger.png" alt="burger icon" />
+          </button>
+
+          <nav>
+            <ul id="menu">
+              <li><a href="index.html">WEBSHOP</a></li>
+              <li><a href="events.html">ABOUT</a></li>
+              <li><a href="program.html">WORKSHOP</a></li>
+              <li><a href="om.html">INSPIRATION</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </header>
+
+    <script type="module" src="main.js"></script>
     <script type="module" src="js/login.js"></script>
   </body>
 </html>
