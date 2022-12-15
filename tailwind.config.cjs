@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     screens: {
       desktop: "1280px",
+      // mobile: "1279px",
     },
+
     extend: {},
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
