@@ -4,12 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <title>Felt Like Pink Today</title>
   </head>
-  <body class="">
+  <body class="bg-mainBrand">
     <!-- ------- Navigation ------- -->
     <header>
-      <div class="h-6 w-full bg-emerald-700 text-center text-white">
+      <div
+        class="text-white h-6 w-full bg-thirdBrand text-center font-robotoCondensed text-mainBrand"
+      >
         <p>FREE DELIVERY FROM DKK 499 WITH SELECTED METHODS</p>
       </div>
       <nav class="banner">
@@ -20,14 +26,16 @@
             </a>
 
             <div>
-              <ul class="flex items-center justify-center">
-                <li><a href="webshop.html">WEBSHOP &nbsp; I &nbsp;</a></li>
-                <li><a href="about.html">ABOUT</a></li>
+              <ul class="flex items-center justify-center font-robotoCondensed">
+                <li>
+                  <a href="category-mugs.html">WEBSHOP &nbsp; I &nbsp;</a>
+                </li>
+                <li><a href="payflow.html">ABOUT</a></li>
               </ul>
             </div>
 
             <div class="flex">
-              <ul class="flex">
+              <ul class="flex font-robotoCondensed">
                 <li>CURRENCY I &nbsp;</li>
                 <li class="mr-10">DKK</li>
               </ul>
@@ -49,15 +57,15 @@
       </nav>
     </header>
 
-    <main>
+    <main class="pb-48">
       <!-- ------- Breadcrumb ------- -->
-      <section class="flex" aria-label="Breadcrumb">
+      <section class="flex font-lora" aria-label="Breadcrumb">
         <ol class="md:space-x-3 inline-flex items-center space-x-1">
           <li>
             <div class="flex items-center">
               <a
                 href="#"
-                class="md:ml-2 ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                class="md:ml-2 text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white text-sm font-medium ml-1"
                 >Webshop</a
               >
             </div>
@@ -65,7 +73,7 @@
           <li aria-current="page">
             <div class="flex items-center">
               <svg
-                class="h-6 w-6 text-gray-400"
+                class="text-gray-400 h-6 w-6"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -76,16 +84,13 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              <span
-                class="md:ml-2 ml-1 text-sm font-medium text-gray-500 dark:text-gray-400"
-                >All Products</span
-              >
+              <span>All Products</span>
             </div>
           </li>
           <li aria-current="page">
             <div class="flex items-center">
               <svg
-                class="h-6 w-6 text-gray-400"
+                class="text-gray-400 h-6 w-6"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -96,16 +101,13 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              <span
-                class="md:ml-2 ml-1 text-sm font-medium text-gray-500 dark:text-gray-400"
-                >Mugs</span
-              >
+              <span>Mugs</span>
             </div>
           </li>
           <li aria-current="page">
             <div class="flex items-center">
               <svg
-                class="h-6 w-6 text-gray-400"
+                class="text-gray-400 h-6 w-6"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -116,10 +118,7 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              <span
-                class="md:ml-2 ml-1 text-sm font-medium text-gray-500 dark:text-gray-400"
-                >Felt Like Pink Today</span
-              >
+              <span>Felt like pink today</span>
             </div>
           </li>
         </ol>
@@ -127,32 +126,400 @@
 
       <!-- ------- Product header ------- -->
       <section>
-        <div class="grid grid-cols-12 grid-rows-3">
-          <div class="col-start-2 col-end-5">
-            <div>
-              <h2>FELT LIKE PINK TODAY</h2>
+        <div class="grid desktop:grid-cols-12">
+          <div class="desktop:col-start-2 desktop:col-end-5">
+            <h2
+              class="pb-2 text-h2Mobile font-bold leading-none text-detailBrand desktop:text-h2Desktop"
+            >
+              FELT LIKE PINK TODAY
+            </h2>
+            <h5 class="pb-8 text-h5">A Unique piece</h5>
+          </div>
+          <div class="desktop:col-start-6 desktop:col-end-11">
+            <div class="slideshow-container relative">
+              <div class="mySlides fade hidden">
+                <img src="img/flptmug1.svg" style="width: 100%" />
+              </div>
+              <div class="mySlides fade hidden">
+                <img src="img/flptmug2.svg" style="width: 100%" />
+              </div>
+              <div class="mySlides fade hidden">
+                <img src="img/flptmug3.svg" style="width: 100%" />
+              </div>
+              <div
+                class="absolute top-11 left-0 grid h-5 w-32 place-content-center bg-successCol text-mainBrand"
+              >
+                <p>Collection #9</p>
+              </div>
+              <a
+                class="prev absolute top-1/2 -mt-12 w-auto cursor-pointer select-none p-4 font-bold"
+                onclick="plusSlides(-1)"
+                >&#10094;</a
+              >
+              <a
+                class="next absolute right-0 top-1/2 -mt-12 w-auto cursor-pointer select-none p-4 font-bold"
+                onclick="plusSlides(1)"
+                >&#10095;</a
+              >
+            </div>
+
+            <div style="text-align: center">
+              <span
+                class="dot mx-1 inline-block h-4 w-4 cursor-pointer rounded-full bg-[#CBCBCB] transition delay-150 ease-in-out hover:bg-primaryCol active:bg-primaryCol"
+                onclick="currentSlide(1)"
+              ></span>
+              <span
+                class="dot mx-1 inline-block h-4 w-4 cursor-pointer rounded-full bg-[#CBCBCB] transition delay-150 ease-in-out hover:bg-primaryCol active:bg-primaryCol"
+                onclick="currentSlide(2)"
+              ></span>
+              <span
+                class="dot mx-1 inline-block h-4 w-4 cursor-pointer rounded-full bg-[#CBCBCB] transition delay-150 ease-in-out hover:bg-primaryCol active:bg-primaryCol"
+                onclick="currentSlide(3)"
+              ></span>
+            </div>
+          </div>
+
+          <div class="grid desktop:grid-cols-12">
+            <div class="col-start-2 col-end-6">
+              <h3
+                class="pb-2 font-robotoCondensed text-h3Mobile font-bold desktop:text-h3Desktop"
+              >
+                DKK 480,00
+              </h3>
+              <div class="flex pl-4">
+                <label>
+                  <input
+                    class="cursor-pointer"
+                    type="checkbox"
+                    unchecked="unchecked"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+                <img class="h-6 w-6" src="img/gifticon.png" alt="Gift icon" />
+                <p>Gift wrapping (+ DKK 29,00)</p>
+              </div>
+              <p
+                class="my-text grid cursor-pointer place-content-center underline"
+              >
+                See our nice wrapping
+              </p>
+              <div class="py-4">
+                <button
+                  class="h-[54px] w-[257px] place-self-center bg-primaryCol text-mainBrand"
+                >
+                  ADD TO CART
+                </button>
+              </div>
+              <div class="border-b-[1px] pb-6">
+                <a href="#"
+                  ><img src="img/wishlist.svg" alt="Wishlist link" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-6 font-lora">
+            <div class="flex pb-4">
+              <img
+                class="h-6 w-6"
+                src="img/deliveryicon.png"
+                alt="Truck icon"
+              />
+              <p>Delivery within 2-5 weekdays</p>
+            </div>
+            <div class="flex pb-4">
+              <img
+                class="h-6 w-6"
+                src="img/packageicon.png"
+                alt="Package icon"
+              />
               <p>
+                Free delivery from DKK 499 with <br />
+                selected shipping methods
+              </p>
+            </div>
+            <div class="flex border-b-[1px] pb-4">
+              <img class="h-6 w-6" src="img/returnicon.png" alt="Return icon" />
+              <p>30 days return</p>
+            </div>
+            <p class="pb-2 font-lora">
+              We present to you; the mug! Always there for your monday mornings,
+              late night meetings, crazy cold afternoons.
+            </p>
+
+            <div class="font-lora desktop:pb-40">
+              <button
+                type="button"
+                class="collapsible mt-10 flex w-full cursor-pointer justify-between border-b-[1px] p-4 text-left font-bold"
+              >
+                Products Description
+                <img src="img/foldedicon.png" alt="Arrow icon" />
+              </button>
+              <div class="content hidden overflow-hidden px-4">
+                <p>Measurements:</p>
+                <p>
+                  Height 8cm <br />
+                  Width 8cm <br />
+                  Contains approx 4dl
+                </p>
+              </div>
+              <button
+                type="button"
+                class="collapsible flex w-full cursor-pointer justify-between border-b-[1px] p-4 text-left font-bold"
+              >
+                Shipping
+                <img src="img/foldedicon.png" alt="Arrow icon" />
+              </button>
+              <div class="content hidden overflow-hidden px-4">
+                <p>
+                  "Info about shipping cost <br />
+                  depending on country."
+                </p>
+                <p>
+                  The average time of delivery of <br />
+                  this product is 2-5 days, but it <br />
+                  can differ (For Europe see <br />
+                  delivery options). We'll notify <br />
+                  you upon order with a closer <br />
+                  expected date of delivery. <br />
+                </p>
+              </div>
+              <button
+                type="button"
+                class="collapsible flex w-full cursor-pointer justify-between border-b-[1px] p-4 text-left font-bold"
+              >
+                Returns
+                <img src="img/foldedicon.png" alt="Arrow icon" />
+              </button>
+              <div class="content hidden overflow-hidden px-4">
+                <p>
+                  When you've bought products <br />
+                  from us, we most surely know, <br />
+                  you'll fall in love with it. But, <br />
+                  some loves aren't everlasting - <br />
+                  and if you regret your purchase, <br />
+                  you always have two weeks to <br />
+                  cancel it when buying from our <br />
+                  webshop.
+                </p>
+              </div>
+              <button
+                type="button"
+                class="collapsible flex w-full cursor-pointer justify-between border-b-[1px] p-4 text-left font-bold"
+              >
+                Care
+                <img src="img/foldedicon.png" alt="Arrow icon" />
+              </button>
+              <div class="content hidden overflow-hidden px-4">
+                <p>
+                  Handle this with most loving <br />
+                  care. Love it like it's your baby. <br />
+                  Hold it tight. Not so tight! It's <br />
+                  fragile, you know. We really do <br />
+                  recommend you don't use it in <br />
+                  the microwave. But we also<br />
+                  know, on a busy day, dish <br />
+                  washing machines are lifesaving. <br />
+                  So of course, you can wash it <br />
+                  there.
+                </p>
+              </div>
+            </div>
+
+            <h2
+              class="font-robotoCondensed text-h2Mobile leading-none desktop:pt-20 desktop:text-h2Desktop"
+            >
+              WANNA START YOU <br />
+              OWN LITTLE <br />
+              COLLECTION?
+            </h2>
+            <h5 class="py-2 font-robotoCondensed text-h5">
+              Sign up for our newsletter and get <br />
+              notice, when other items of with this <br />
+              glazing are fresh out the oven
+            </h5>
+            <form class="mb-10 mt-4 flex h-[45px] w-[340px]">
+              <input
+                class="w-[340px] border-[1px] bg-mainBrand"
+                id="email"
+                name="email"
+                placeholder="Enter your email here"
+              />
+              <button
+                href="#"
+                class="bg-primaryCol px-8 py-2 text-center text-footer text-mainBrand"
+              >
+                APPLY
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-5">
+        <div class="w-full desktop:h-96">
+          <h3
+            class="pb-4 font-robotoCondensed text-h3Mobile font-bold desktop:text-h3Desktop"
+          >
+            PRODUCTS YOU MAY ALSO LIKE...
+          </h3>
+
+          <div
+            class="hidden place-content-center font-robotoCondensed desktop:flex desktop:gap-5"
+          >
+            <article>
+              <div class="relative">
+                <img
+                  class="border-t-[1px] border-l-[1px] border-r-[1px]"
+                  src="img/bbcandleholder1.svg"
+                  onmouseover="this.src='img/bbcandleholder2.svg'"
+                  onmouseout="this.src='img/bbcandleholder1.svg'"
+                  alt="Blue bird candleholder"
+                />
+                <div
+                  class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-detailBrand text-mainBrand"
+                >
+                  <p>BRAND NEW</p>
+                </div>
+                <div
+                  class="absolute top-11 left-0 grid h-5 w-32 place-content-center bg-successCol text-mainBrand"
+                >
+                  <p>Collection #19</p>
+                </div>
+              </div>
+              <div
+                class="border-black grid h-24 place-content-center border-b-[1px] border-l-[1px] border-r-[1px] bg-primaryBrand text-center"
+              >
+                <h5 class="text-h5 font-bold">CANDLEHOLDERS</h5>
+                <p class="italic">Bluebird</p>
+                <h5 class="text-h5 font-bold">DKK 220,00</h5>
+              </div>
+            </article>
+            <article>
+              <img
+                class="border-t-[1px] border-l-[1px] border-r-[1px]"
+                src="img/ddwinemug1.svg"
+                onmouseover="this.src='img/ddwinemug2.svg'"
+                onmouseout="this.src='img/ddwinemug1.svg'"
+                alt="Daydrinking winemug"
+              />
+              <div
+                class="border-black grid h-24 place-content-center border-b-[1px] border-l-[1px] border-r-[1px] bg-primaryBrand"
+              >
+                <h5 class="font-bold">WINEMUGS</h5>
+                <p class="italic">Daydrinking</p>
+                <h5 class="font-bold">DKK 580,00</h5>
+              </div>
+            </article>
+            <article>
+              <div class="holder_box relative">
+                <img
+                  class="holder_img border-t-[1px] border-l-[1px] border-r-[1px]"
+                  src="img/hotmdholder.svg"
+                  alt="Blue bird candleholder"
+                />
+                <div
+                  class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-detailBrand text-mainBrand"
+                >
+                  <p>BRAND NEW</p>
+                </div>
+                <div
+                  class="absolute top-11 left-0 grid h-5 w-32 place-content-center bg-successCol text-mainBrand"
+                >
+                  <p>Collection #19</p>
+                </div>
+              </div>
+              <div
+                class="border-black grid h-24 place-content-center border-b-[1px] border-l-[1px] border-r-[1px] bg-primaryBrand text-center"
+              >
+                <h5 class="font-bold">KITCHEN ROLL HOLDER</h5>
+                <p class="italic">Hold on to me dearly</p>
+                <h5 class="font-bold">DKK 695,00</h5>
+              </div>
+            </article>
+            <article>
+              <img
+                class="border-t-[1px] border-l-[1px] border-r-[1px]"
+                src="img/cclampshade1.svg"
+                onmouseover="this.src='img/cclampshade2.svg'"
+                onmouseout="this.src='img/cclampshade1.svg'"
+                alt="Cucumber cute lampshade"
+              />
+              <div
+                class="border-black grid h-24 place-content-center border-b-[1px] border-l-[1px] border-r-[1px] bg-primaryBrand text-center"
+              >
+                <h5 class="font-bold">LAMPSHADE</h5>
+                <p class="italic">Cucumber cute</p>
+                <h5 class="font-bold">DKK 695,00</h5>
+              </div>
+            </article>
+          </div>
+
+          <div class="carousel desktop:hidden">
+            <img src="img/bbcandleholder1.svg" alt="image 1" />
+            <img src="img/ddwinemug1.svg" alt="image 2" />
+            <img src="img/cclampshade1.svg" alt="image 3" />
+            <img src="img/bbcandleholder1.svg" alt="image 1" />
+            <img src="img/ddwinemug1.svg" alt="image 2" />
+            <img src="img/cclampshade1.svg" alt="image 3" />
+          </div>
+        </div>
+      </section>
+
+      <!-- <section>
+        <div class="grid desktop:grid-cols-12">
+          <div class="desktop:col-start-2 desktop:col-end-5">
+            <div class="font-robotoCondensed">
+              <h2
+                class="pb-2 text-h2Mobile font-bold leading-none text-detailBrand desktop:text-h2Desktop"
+              >
+                FELT LIKE PINK TODAY
+              </h2>
+              <h5 class="pb-8 text-h5">A Unique piece</h5>
+            </div>
+            <div>
+              <p class="pb-2 font-lora">
                 We present to you; the mug! Always there for your monday
                 mornings, late night meetings, crazy cold afternoons.
               </p>
-            </div>
-            <div>
-              <h3>DKK 480,00</h3>
-              <div>
-                <div class="flex">
+              <h3
+                class="pb-2 font-robotoCondensed text-h3Mobile font-bold desktop:text-h3Desktop"
+              >
+                DKK 480,00
+              </h3>
+              <div class="font-robotoCondensed">
+                <div class="flex pl-4">
                   <label>
-                    <input type="checkbox" checked="checked" />
+                    <input
+                      class="cursor-pointer"
+                      type="checkbox"
+                      unchecked="unchecked"
+                    />
                     <span class="checkmark"></span>
                   </label>
                   <img class="h-6 w-6" src="img/gifticon.png" alt="Gift icon" />
                   <p>Gift wrapping (+ DKK 29,00)</p>
                 </div>
-                <div class="border-b-[1px]">
-                  <a href="#">ADD TO CART</a>
+                <p
+                  class="my-text grid cursor-pointer place-content-center underline"
+                >
+                  See our nice wrapping
+                </p>
+                <div class="py-4">
+                  <button
+                    class="h-[54px] w-[257px] place-self-center bg-primaryCol text-mainBrand"
+                  >
+                    CONTINUE
+                  </button>
+                </div>
+                <div class="border-b-[1px] pb-6">
+                  <a href="#"
+                    ><img src="img/wishlist.svg" alt="Wishlist link" />
+                  </a>
                 </div>
 
-                <div>
-                  <div class="flex">
+                <div class="pt-6 font-lora">
+                  <div class="flex pb-4">
                     <img
                       class="h-6 w-6"
                       src="img/deliveryicon.png"
@@ -160,7 +527,7 @@
                     />
                     <p>Delivery within 2-5 weekdays</p>
                   </div>
-                  <div class="flex">
+                  <div class="flex pb-4">
                     <img
                       class="h-6 w-6"
                       src="img/packageicon.png"
@@ -171,7 +538,7 @@
                       selected shipping methods
                     </p>
                   </div>
-                  <div class="flex border-b-[1px]">
+                  <div class="flex border-b-[1px] pb-4">
                     <img
                       class="h-6 w-6"
                       src="img/returnicon.png"
@@ -180,69 +547,81 @@
                     <p>30 days return</p>
                   </div>
                 </div>
-                <div>
+                <div class="pb-40 font-lora">
                   <button
                     type="button"
-                    class="collapsible flex w-full cursor-pointer justify-between border-b-[1px] p-4 text-left text-sm"
+                    class="collapsible mt-10 flex w-full cursor-pointer justify-between border-b-[1px] p-4 text-left font-bold"
                   >
                     Products Description
                     <img src="img/foldedicon.png" alt="Arrow icon" />
                   </button>
                   <div class="content hidden overflow-hidden px-4">
+                    <p>Measurements:</p>
                     <p>
-                      LLorem ipsum dolor sit amet consectetur. Metus ac risus
-                      nisl pellentesque eros adipiscing placerat sed. Porta
-                      egestas augue velit scelerisque netus. Molestie augue
-                      dignissim integer tincidunt tempus aenean viverra morbi
-                      aliquet. Ut pellentesque convallis tellus sed.
+                      Height 8cm <br />
+                      Width 8cm <br />
+                      Contains approx 4dl
                     </p>
                   </div>
                   <button
                     type="button"
-                    class="collapsible flex w-full cursor-pointer justify-between border-b-[1px] p-4 text-left text-sm"
+                    class="collapsible flex w-full cursor-pointer justify-between border-b-[1px] p-4 text-left font-bold"
                   >
                     Shipping
                     <img src="img/foldedicon.png" alt="Arrow icon" />
                   </button>
                   <div class="content hidden overflow-hidden px-4">
                     <p>
-                      LLorem ipsum dolor sit amet consectetur. Metus ac risus
-                      nisl pellentesque eros adipiscing placerat sed. Porta
-                      egestas augue velit scelerisque netus. Molestie augue
-                      dignissim integer tincidunt tempus aenean viverra morbi
-                      aliquet. Ut pellentesque convallis tellus sed.
+                      "Info about shipping cost <br />
+                      depending on country."
+                    </p>
+                    <p>
+                      The average time of delivery of <br />
+                      this product is 2-5 days, but it <br />
+                      can differ (For Europe see <br />
+                      delivery options). We'll notify <br />
+                      you upon order with a closer <br />
+                      expected date of delivery. <br />
                     </p>
                   </div>
                   <button
                     type="button"
-                    class="collapsible flex w-full cursor-pointer justify-between border-b-[1px] p-4 text-left text-sm"
+                    class="collapsible flex w-full cursor-pointer justify-between border-b-[1px] p-4 text-left font-bold"
                   >
                     Returns
                     <img src="img/foldedicon.png" alt="Arrow icon" />
                   </button>
                   <div class="content hidden overflow-hidden px-4">
                     <p>
-                      LLorem ipsum dolor sit amet consectetur. Metus ac risus
-                      nisl pellentesque eros adipiscing placerat sed. Porta
-                      egestas augue velit scelerisque netus. Molestie augue
-                      dignissim integer tincidunt tempus aenean viverra morbi
-                      aliquet. Ut pellentesque convallis tellus sed.
+                      When you've bought products <br />
+                      from us, we most surely know, <br />
+                      you'll fall in love with it. But, <br />
+                      some loves aren't everlasting - <br />
+                      and if you regret your purchase, <br />
+                      you always have two weeks to <br />
+                      cancel it when buying from our <br />
+                      webshop.
                     </p>
                   </div>
                   <button
                     type="button"
-                    class="collapsible flex w-full cursor-pointer justify-between border-b-[1px] p-4 text-left text-sm"
+                    class="collapsible flex w-full cursor-pointer justify-between border-b-[1px] p-4 text-left font-bold"
                   >
                     Care
                     <img src="img/foldedicon.png" alt="Arrow icon" />
                   </button>
                   <div class="content hidden overflow-hidden px-4">
                     <p>
-                      LLorem ipsum dolor sit amet consectetur. Metus ac risus
-                      nisl pellentesque eros adipiscing placerat sed. Porta
-                      egestas augue velit scelerisque netus. Molestie augue
-                      dignissim integer tincidunt tempus aenean viverra morbi
-                      aliquet. Ut pellentesque convallis tellus sed.
+                      Handle this with most loving <br />
+                      care. Love it like it's your baby. <br />
+                      Hold it tight. Not so tight! It's <br />
+                      fragile, you know. We really do <br />
+                      recommend you don't use it in <br />
+                      the microwave. But we also<br />
+                      know, on a busy day, dish <br />
+                      washing machines are lifesaving. <br />
+                      So of course, you can wash it <br />
+                      there.
                     </p>
                   </div>
                 </div>
@@ -250,47 +629,276 @@
             </div>
           </div>
 
-          <div class="slideshow-container relative col-start-6 col-end-11">
-            <div class="mySlides fade hidden">
-              <img src="img/flptmug_singleview1.png" style="width: 100%" />
-            </div>
-            <div class="mySlides fade hidden">
-              <img src="img/flptmug_singleview2.png" style="width: 100%" />
-            </div>
-            <div class="mySlides fade hidden">
-              <img src="img/flptmug_singleview3.png" style="width: 100%" />
+          <div class="desktop:col-start-7 desktop:col-end-12">
+            <div class="slideshow-container relative">
+              <div class="mySlides fade hidden">
+                <img src="img/flptmug1.svg" style="width: 100%" />
+              </div>
+              <div class="mySlides fade hidden">
+                <img src="img/flptmug2.svg" style="width: 100%" />
+              </div>
+              <div class="mySlides fade hidden">
+                <img src="img/flptmug3.svg" style="width: 100%" />
+              </div>
+              <div
+                class="absolute top-11 left-0 grid h-5 w-32 place-content-center bg-successCol text-mainBrand"
+              >
+                <p>Collection #9</p>
+              </div>
+              <a
+                class="prev absolute top-1/2 -mt-12 w-auto cursor-pointer select-none p-4 font-bold"
+                onclick="plusSlides(-1)"
+                >&#10094;</a
+              >
+              <a
+                class="next absolute right-0 top-1/2 -mt-12 w-auto cursor-pointer select-none p-4 font-bold"
+                onclick="plusSlides(1)"
+                >&#10095;</a
+              >
+
+              <br />
+              <div style="text-align: center">
+                <span
+                  class="dot mx-0 inline-block h-4 w-4 cursor-pointer rounded-full bg-[#CBCBCB] transition delay-150 ease-in-out hover:bg-primaryCol active:bg-primaryCol"
+                  onclick="currentSlide(1)"
+                ></span>
+                <span
+                  class="dot mx-0 inline-block h-4 w-4 cursor-pointer rounded-full bg-[#CBCBCB] transition delay-150 ease-in-out hover:bg-primaryCol active:bg-primaryCol"
+                  onclick="currentSlide(2)"
+                ></span>
+                <span
+                  class="dot mx-0 inline-block h-4 w-4 cursor-pointer rounded-full bg-[#CBCBCB] transition delay-150 ease-in-out hover:bg-primaryCol active:bg-primaryCol"
+                  onclick="currentSlide(3)"
+                ></span>
+              </div>
             </div>
 
-            <a
-              class="prev absolute top-1/2 -mt-12 w-auto cursor-pointer select-none bg-blue-400 p-4 text-xl font-bold text-white hover:bg-pink-400"
-              onclick="plusSlides(-1)"
-              >&#10094;</a
+            <h2
+              class="pt-20 font-robotoCondensed text-h2Mobile leading-none desktop:text-h2Desktop"
             >
-            <a
-              class="next absolute right-0 top-1/2 -mt-12 w-auto cursor-pointer select-none bg-blue-400 p-4 text-xl font-bold text-white hover:bg-pink-400"
-              onclick="plusSlides(1)"
-              >&#10095;</a
-            >
-
-            <br />
-            <div style="text-align: center">
-              <span
-                class="dot mx-0 inline-block h-4 w-4 cursor-pointer rounded-full bg-gray-400 transition delay-150 ease-in-out hover:bg-pink-500 active:bg-gray-500"
-                onclick="currentSlide(1)"
-              ></span>
-              <span
-                class="dot mx-0 inline-block h-4 w-4 cursor-pointer rounded-full bg-gray-400 transition delay-150 ease-in-out hover:bg-pink-500 active:bg-gray-500"
-                onclick="currentSlide(2)"
-              ></span>
-              <span
-                class="dot mx-0 inline-block h-4 w-4 cursor-pointer rounded-full bg-gray-400 transition delay-150 ease-in-out hover:bg-pink-500 active:bg-gray-500"
-                onclick="currentSlide(3)"
-              ></span>
-            </div>
+              WANNA START YOU <br />
+              OWN LITTLE <br />
+              COLLECTION?
+            </h2>
+            <h5 class="py-2 font-robotoCondensed text-h5">
+              Sign up for our newsletter and get <br />
+              notice, when other items of with this <br />
+              glazing are fresh out the oven
+            </h5>
+            <form class="mb-10 mt-4 flex h-[45px] w-[340px]">
+              <input
+                class="w-[340px] border-[1px] bg-mainBrand"
+                id="email"
+                name="email"
+                placeholder="Enter your email here"
+              />
+              <button
+                href="#"
+                class="bg-primaryCol px-8 py-2 text-center text-footer text-mainBrand"
+              >
+                APPLY
+              </button>
+            </form>
           </div>
         </div>
       </section>
+
+      <section class="mx-5">
+        <div class="w-full desktop:h-96">
+          <h3
+            class="pb-4 font-robotoCondensed text-h3Mobile font-bold desktop:text-h3Desktop"
+          >
+            PRODUCTS YOU MAY ALSO LIKE...
+          </h3>
+          <div
+            class="place-content-center font-robotoCondensed desktop:flex desktop:gap-5"
+          >
+            <article>
+              <div class="relative">
+                <img
+                  class="border-t-[1px] border-l-[1px] border-r-[1px]"
+                  src="img/bbcandleholder1.svg"
+                  onmouseover="this.src='img/bbcandleholder2.svg'"
+                  onmouseout="this.src='img/bbcandleholder1.svg'"
+                  alt="Blue bird candleholder"
+                />
+                <div
+                  class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-detailBrand text-mainBrand"
+                >
+                  <p>BRAND NEW</p>
+                </div>
+                <div
+                  class="absolute top-11 left-0 grid h-5 w-32 place-content-center bg-successCol text-mainBrand"
+                >
+                  <p>Collection #19</p>
+                </div>
+              </div>
+              <div
+                class="border-black grid h-24 place-content-center border-b-[1px] border-l-[1px] border-r-[1px] bg-primaryBrand text-center"
+              >
+                <h5 class="text-h5 font-bold">CANDLEHOLDERS</h5>
+                <p class="italic">Bluebird</p>
+                <h5 class="text-h5 font-bold">DKK 220,00</h5>
+              </div>
+            </article>
+            <article>
+              <img
+                class="border-t-[1px] border-l-[1px] border-r-[1px]"
+                src="img/ddwinemug1.svg"
+                onmouseover="this.src='img/ddwinemug2.svg'"
+                onmouseout="this.src='img/ddwinemug1.svg'"
+                alt="Daydrinking winemug"
+              />
+              <div
+                class="border-black grid h-24 place-content-center border-b-[1px] border-l-[1px] border-r-[1px] bg-primaryBrand"
+              >
+                <h5 class="font-bold">WINEMUGS</h5>
+                <p class="italic">Daydrinking</p>
+                <h5 class="font-bold">DKK 580,00</h5>
+              </div>
+            </article>
+            <article>
+              <div class="holder_box relative">
+                <img
+                  class="holder_img border-t-[1px] border-l-[1px] border-r-[1px]"
+                  src="img/hotmdholder.svg"
+                  alt="Blue bird candleholder"
+                />
+                <div
+                  class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-detailBrand text-mainBrand"
+                >
+                  <p>BRAND NEW</p>
+                </div>
+                <div
+                  class="absolute top-11 left-0 grid h-5 w-32 place-content-center bg-successCol text-mainBrand"
+                >
+                  <p>Collection #19</p>
+                </div>
+              </div>
+              <div
+                class="border-black grid h-24 place-content-center border-b-[1px] border-l-[1px] border-r-[1px] bg-primaryBrand text-center"
+              >
+                <h5 class="font-bold">KITCHEN ROLL HOLDER</h5>
+                <p class="italic">Hold on to me dearly</p>
+                <h5 class="font-bold">DKK 695,00</h5>
+              </div>
+            </article>
+            <article>
+              <img
+                class="border-t-[1px] border-l-[1px] border-r-[1px]"
+                src="img/cclampshade1.svg"
+                onmouseover="this.src='img/cclampshade2.svg'"
+                onmouseout="this.src='img/cclampshade1.svg'"
+                alt="Cucumber cute lampshade"
+              />
+              <div
+                class="border-black grid h-24 place-content-center border-b-[1px] border-l-[1px] border-r-[1px] bg-primaryBrand text-center"
+              >
+                <h5 class="font-bold">LAMPSHADE</h5>
+                <p class="italic">Cucumber cute</p>
+                <h5 class="font-bold">DKK 695,00</h5>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section> -->
     </main>
+
+    <footer>
+      <div class="flex justify-between bg-thirdBrand py-5 px-10 text-mainBrand">
+        <div>
+          <div class="pb-2">
+            <a class="font-robotoCondensed text-footer font-bold" href="#"
+              >ABOUT</a
+            >
+            <br />
+          </div>
+
+          <a class="font-robotoCondensed text-footer font-bold" href="#"
+            >TERMS</a
+          >
+
+          <div class="pl-8 pb-2 font-robotoCondensed text-footer">
+            <a href="#"
+              ><span class="italic text-detailBrand">Mmmm, cookies</span> -
+              Cookies policy</a
+            >
+            <br />
+            <a href="#"
+              ><span class="italic text-detailBrand"
+                >W've got your privacy</span
+              >
+              - Privacy policy</a
+            >
+            <br />
+            <a href="#"
+              ><span class="italic text-detailBrand">What goes around</span> -
+              Return policy</a
+            >
+            <br />
+            <a href="#"
+              ><span class="italic text-detailBrand">And then she asked..</span>
+              - FAQ's</a
+            >
+          </div>
+          <div class="pb-2">
+            <a class="font-robotoCondensed text-footer font-bold" href="#"
+              >CONTACT US</a
+            >
+            <br />
+          </div>
+          <div class="pb-10">
+            <a class="font-robotoCondensed text-footer font-bold" href="#"
+              >SITEMAP</a
+            >
+          </div>
+          <div class="flex h-[25px] w-[25] gap-5">
+            <img src="img/instagram.png" alt="Instagram icon" />
+            <img src="img/facebook.png" alt="Facebook icon" />
+            <img src="img/pinterest.png" alt="Pinterest icon" />
+          </div>
+        </div>
+        <div class="relative w-1/4">
+          <p class="absolute bottom-0 font-robotoCondensed text-[18px]">
+            &#169; Copyright - The Clay Play 2022
+          </p>
+        </div>
+        <div>
+          <h3 class="font-robotoCondensed text-h3Desktop font-bold">
+            NEWSLETTER
+          </h3>
+          <p class="font-lora text-footer">
+            Sign up and get the hottes clay news
+          </p>
+          <form class="mb-10 mt-4 flex h-[45px] w-[340px]">
+            <input
+              class="w-[340px] border-[1px] bg-thirdBrand"
+              id="email"
+              name="email"
+              placeholder="Enter your email here"
+            />
+            <a
+              href="#"
+              class="bg-mainBrand px-8 py-2 text-center text-footer text-primaryCol"
+            >
+              APPLY
+            </a>
+          </form>
+          <div class="border-white border-t-[1px]">
+            <h3 class="font-robotoCondensed text-h3Desktop font-bold">
+              THE CLAY PLAY <br />
+              SHOP, ATELIER & WORKSHOP
+            </h3>
+          </div>
+          <address class="font-lora text-footer">
+            Agtoftsvej 7 C <br />
+            6400 Sønderborg <br />Denmark <br />
+            <br />Tlf. +45 22 50 24 66 <br />
+            CVR/VAT: DK30618025
+          </address>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="main.js"></script>
     <script type="module" src="js/login.js"></script>
     <script>

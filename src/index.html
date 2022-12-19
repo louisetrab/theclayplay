@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
     <title>The Clay Play All Products</title>
   </head>
-  <body class="">
+  <body class="bg-mainBrand">
     <!-- ------- Navigation ------- -->
     <header>
-      <div class="h-6 w-full bg-emerald-700 text-center text-white">
+      <div
+        class="text-white h-6 w-full bg-thirdBrand text-center font-robotoCondensed text-mainBrand"
+      >
         <p>FREE DELIVERY FROM DKK 499 WITH SELECTED METHODS</p>
       </div>
       <nav class="banner">
@@ -24,16 +26,16 @@
             </a>
 
             <div>
-              <ul class="flex items-center justify-center">
+              <ul class="flex items-center justify-center font-robotoCondensed">
                 <li>
                   <a href="category-mugs.html">WEBSHOP &nbsp; I &nbsp;</a>
                 </li>
-                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="payflow.html">ABOUT</a></li>
               </ul>
             </div>
 
             <div class="flex">
-              <ul class="flex">
+              <ul class="flex font-robotoCondensed">
                 <li>CURRENCY I &nbsp;</li>
                 <li class="mr-10">DKK</li>
               </ul>
@@ -55,22 +57,31 @@
       </nav>
     </header>
 
-    <main>
+    <main class="pb-48">
       <!-- ------- Hero ------- -->
       <section>
-        <div class="h-1/2 w-full">
+        <div class="relative h-1/2 w-[80rem]">
           <img src="img/hero_desktopv2.png" alt="Hero image" />
+          <div
+            class="absolute top-1/4 left-[3px] w-[80rem] font-bold text-primaryCol"
+          >
+            <h4 class="text-left-24 ml-24 text-h4">WE'RE THE CLAY PLAY</h4>
+            <h1 class="text-center text-h1Desktop">
+              WE WILL COLOR UP YOUR DAY WITH UNIKA CERAMICS
+            </h1>
+            <h3 class="text-center text-h3Desktop">COME PLAY WITH US</h3>
+          </div>
         </div>
       </section>
 
       <!-- ------- Breadcrumb ------- -->
-      <section class="flex" aria-label="Breadcrumb">
+      <section class="flex font-lora" aria-label="Breadcrumb">
         <ol class="md:space-x-3 inline-flex items-center space-x-1">
           <li>
             <div class="flex items-center">
               <a
                 href="#"
-                class="md:ml-2 ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                class="md:ml-2 text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white text-sm font-medium ml-1"
                 >Webshop</a
               >
             </div>
@@ -78,7 +89,7 @@
           <li aria-current="page">
             <div class="flex items-center">
               <svg
-                class="h-6 w-6 text-gray-400"
+                class="text-gray-400 h-6 w-6"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -89,257 +100,579 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              <span
-                class="md:ml-2 ml-1 text-sm font-medium text-gray-500 dark:text-gray-400"
-                >All Products</span
-              >
+              <span>All Products</span>
             </div>
           </li>
         </ol>
       </section>
 
       <!-- ------- Product list & cards ------- -->
-      <section class="mx-5">
-        <div>
-          <h2>ALL OUR PRODUCTS</h2>
-          <div class="grid grid-cols-4 grid-rows-1 gap-5">
-            <div class="row-span-2">
-              <p>See all products</p>
-              <p>INTERIOR</p>
-              <div>
-                <p>Candleholders</p>
-                <p>Lamp shades</p>
-                <p>Wall decoration</p>
-                <p>Ceramic candles</p>
-                <p>Bowls</p>
-                <p>Vases</p>
-                <p>Ceramic animals</p>
-                <p>Planters</p>
-              </div>
-              <p>FLAGS</p>
-              <div>
-                <p>Dannebrog flag</p>
-                <p>Clown flag</p>
-                <p>Name flag</p>
-                <p>Rainbow flags</p>
-                <p>Worls flag</p>
-                <p>Harlequin flag</p>
-              </div>
-              <p>Kitchen</p>
-              <div>
-                <p>Cups</p>
-                <p>Coffeedrippers</p>
-                <p>Wine cups</p>
-                <p>Kitchen roll holder</p>
-              </div>
+      <h2
+        class="pt-24 font-robotoCondensed text-h2Mobile font-bold text-primaryCol desktop:text-h2Desktop"
+      >
+        ALL OUR PRODUCTS
+      </h2>
+      <section class="mx-5 font-robotoCondensed">
+        <div class="grid grid-cols-10">
+          <div class="">
+            <ul
+              class="col-span-2 col-start-1 row-span-2 w-[188px] pl-5 text-primaryCol"
+            >
+              <li class="flex gap-2 pb-[16px] pt-12 font-bold text-detailBrand">
+                <img src="img/active.svg" alt="active" />
+                <a href="index.html">All products</a>
+              </li>
+              <li class="font-bold">CHRISTMAS</li>
+              <li class="hover:font-bold"><a href="#">Advent wreaths</a></li>
+              <li class="pb-[31px] hover:font-bold">
+                <a href="#">Christmas Trees</a>
+              </li>
+              <li class="font-bold">FLAGS</li>
+              <li class="hover:font-bold"><a href="#">Clown Flag</a></li>
+              <li class="hover:font-bold"><a href="#">Dannebrog Flag</a></li>
+              <li class="hover:font-bold"><a href="#">Harlequin Flag</a></li>
+              <li class="hover:font-bold"><a href="#">Name Flag</a></li>
+              <li class="hover:font-bold"><a href="#">Rainbow Flag</a></li>
+              <li class="pb-[31px] hover:font-bold">
+                <a href="#">World Flag</a>
+              </li>
+              <li class="font-bold">INTERIOR</li>
+              <li class="hover:font-bold"><a href="#">Bowls</a></li>
+              <li class="hover:font-bold"><a href="#">Candleholders</a></li>
+              <li class="hover:font-bold"><a href="#">Ceramic animals</a></li>
+              <li class="hover:font-bold"><a href="#">Ceramic candles</a></li>
+              <li class="hover:font-bold"><a href="#">Lamp shades</a></li>
+              <li class="hover:font-bold"><a href="#">Planters</a></li>
+              <li class="hover:font-bold"><a href="#">Vases</a></li>
+              <li class="pb-[31px] hover:font-bold">
+                <a href="#">Wall decoration</a>
+              </li>
+              <li class="font-bold">KITCHEN</li>
+              <li class="hover:font-bold"><a href="#">Coffeedrippers</a></li>
+              <li class="hover:font-bold">
+                <a href="#">Kitchen roll holders</a>
+              </li>
+              <li class="hover:font-bold">
+                <a href="singleview-mugs.html">Mugs</a>
+              </li>
+              <li class="pb-[31px] hover:font-bold">
+                <a href="#">Wine mugs</a>
+              </li>
+              <li class="font-bold">ART PRINTS</li>
+              <li class="hover:font-bold"><a href="#">Flower prints</a></li>
+            </ul>
+          </div>
 
-              <p>ART PRINTS</p>
-              <div>
-                <p>Flower prints</p>
-              </div>
-              <p>CHRISTMAS</p>
-              <div>
-                <p>Advent wreaths</p>
-                <p>Christmas trees</p>
-              </div>
+          <!-- -------Articles------- -->
+          <div class="bg-blue-500 col-span-9 col-start-3">
+            <div class="grid grid-cols-9">
+              <article class="col-start-1 col-end-4 mr-6">
+                <div class="relative">
+                  <img
+                    class="w-full border-t-[1px] border-l-[1px] border-r-[1px]"
+                    src="img/bbrmug1.svg"
+                    onmouseover="this.src='img/bbrmug2.svg'"
+                    onmouseout="this.src='img/bbrmug1.svg'"
+                  />
+                  <div
+                    class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-detailBrand text-mainBrand"
+                  >
+                    <p>BRAND NEW</p>
+                  </div>
+                </div>
+                <div
+                  class="text-sm grid h-24 place-content-center bg-primaryBrand text-center"
+                >
+                  <h5 class="font-bold">MUGS</h5>
+                  <h5 class="italic">Blue blue river</h5>
+                  <p class="font-bold">DKK 480,00</p>
+                </div>
+              </article>
+
+              <article class="col-start-4 col-end-10 row-span-2 mr-6">
+                <div class="relative">
+                  <img
+                    class="h-fill w-full border-t-[1px] border-l-[1px] border-r-[1px] object-cover"
+                    src="img/bdflag1.svg"
+                    alt="Product image"
+                    onmouseover="this.src='img/bdflag2.svg'"
+                    onmouseout="this.src='img/bdflag1.svg'"
+                  />
+                  <div
+                    class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-detailBrand text-mainBrand"
+                  >
+                    <p>BRAND NEW</p>
+                  </div>
+                </div>
+
+                <div
+                  class="grid h-44 w-full place-content-center bg-primaryBrand text-center"
+                >
+                  <h5 class="font-bold">DANNEBROG FLAG</h5>
+                  <h5 class="italic">Birthday edition</h5>
+                  <p class="font-bold">DKK 395,00</p>
+                </div>
+              </article>
+
+              <article class="col-start-1 col-end-4 row-span-1 mr-6">
+                <div class="relative">
+                  <img
+                    class="rotate_mug w-full border-t-[1px] border-l-[1px] border-r-[1px]"
+                    src="img/fwhakmug1.svg"
+                    alt="Product image"
+                  />
+                  <div
+                    class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-detailBrand text-mainBrand"
+                  >
+                    <p>BRAND NEW</p>
+                  </div>
+                  <div
+                    class="absolute top-11 left-0 grid h-5 w-32 place-content-center bg-successCol text-mainBrand"
+                  >
+                    <p>Collection #12</p>
+                  </div>
+                </div>
+                <div
+                  class="text-sm grid h-24 place-content-center bg-primaryBrand text-center"
+                >
+                  <h5 class="font-bold">Mugs</h5>
+                  <h5 class="italic">Filled with hugs and kisses</h5>
+                  <p class="font-bold">DKK 480,00</p>
+                </div>
+              </article>
+
+              <article class="col-start-1 col-end-4 w-11/12">
+                <div class="relative">
+                  <img
+                    class="h-fill w-full border-t-[1px] border-l-[1px] border-r-[1px] object-cover"
+                    src="img/bbcandleholder1.svg"
+                    alt="Product image"
+                    onmouseover="this.src='img/bbcandleholder2.svg'"
+                    onmouseout="this.src='img/bbcandleholder1.svg'"
+                  />
+                  <div
+                    class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-detailBrand text-mainBrand"
+                  >
+                    <p>BRAND NEW</p>
+                  </div>
+                </div>
+                <div
+                  class="grid h-24 place-content-center bg-primaryBrand text-center"
+                >
+                  <h5 class="font-bold">CANDLEHOLDERS</h5>
+                  <h5 class="italic">Bluebird</h5>
+                  <p class="font-bold">DKK 220,00</p>
+                </div>
+              </article>
+
+              <article class="col-start-4 col-end-7 w-11/12">
+                <div class="relative">
+                  <img
+                    class="h-fill w-full border-t-[1px] border-l-[1px] border-r-[1px] object-cover"
+                    src="img/ssbcandleholder1.svg"
+                    alt="Product image"
+                    onmouseover="this.src='img/ssbcandleholder2.svg'"
+                    onmouseout="this.src='img/ssbcandleholder1.svg'"
+                  />
+                  <div
+                    class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-detailBrand text-mainBrand"
+                  >
+                    <p>BRAND NEW</p>
+                  </div>
+                </div>
+                <div
+                  class="grid h-24 place-content-center bg-primaryBrand text-center"
+                >
+                  <h5 class="font-bold">CANDLEHOLDERS</h5>
+                  <h5 class="italic">Sunshine bright</h5>
+                  <p class="font-bold">DKK 220,00</p>
+                </div>
+              </article>
+
+              <article class="col-span-3 col-start-7 w-11/12">
+                <div class="relative">
+                  <img
+                    class="h-fill w-full border-t-[1px] border-l-[1px] border-r-[1px] object-cover"
+                    src="img/cemug1.svg"
+                    alt="Product image"
+                    onmouseover="this.src='img/cemug2.svg'"
+                    onmouseout="this.src='img/cemug1.svg'"
+                  />
+                  <div
+                    class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-detailBrand text-mainBrand"
+                  >
+                    <p>BRAND NEW</p>
+                  </div>
+                </div>
+                <div
+                  class="grid h-24 place-content-center bg-primaryBrand text-center"
+                >
+                  <h5 class="font-bold">MUGS</h5>
+                  <h5 class="italic">Color explosion</h5>
+                  <p class="font-bold">DKK 480,00</p>
+                </div>
+              </article>
+
+              <article class="col-start-1 col-end-4 w-11/12">
+                <img
+                  class="w-full border-t-[1px] border-l-[1px] border-r-[1px]"
+                  src="img/slgwreath1.svg"
+                  alt="Product image"
+                  onmouseover="this.src='img/slgwreath2.svg'"
+                  onmouseout="this.src='img/slgwreath1.svg'"
+                />
+                <div
+                  class="grid h-24 place-content-center bg-primaryBrand text-center"
+                >
+                  <h5 class="font-bold">ADVENT WREATHS</h5>
+                  <h5 class="italic">Santa's lipgloss</h5>
+                  <p class="font-bold">DKK 1200,00</p>
+                </div>
+              </article>
+
+              <article class="col-start-4 col-end-7 w-11/12">
+                <div class="relative">
+                  <img
+                    class="h-fill w-full border-t-[1px] border-l-[1px] border-r-[1px] object-cover"
+                    src="img/dhfxtree1.svg"
+                    alt="Product image"
+                    onmouseover="this.src='img/dhfxtree2.svg'"
+                    onmouseout="this.src='img/dhfxtree1.svg'"
+                  />
+                  <div
+                    class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-secondaryCol text-mainBrand"
+                  >
+                    <p>SOLD OUT</p>
+                  </div>
+                </div>
+                <div
+                  class="grid h-24 place-content-center bg-primaryBrand text-center"
+                >
+                  <h5 class="font-bold">CHRISTMAS TREE</h5>
+                  <h5 class="italic">Driving home for Xmas</h5>
+                  <p class="font-bold">DKK 270,00</p>
+                </div>
+              </article>
+
+              <article class="col-span-3 col-start-7 w-11/12">
+                <div class="relative">
+                  <img
+                    class="h-fill w-full border-t-[1px] border-l-[1px] border-r-[1px] object-cover"
+                    src="img/podmug1.svg"
+                    alt="Product image"
+                    onmouseover="this.src='img/podmug2.svg'"
+                    onmouseout="this.src='img/podmug1.svg'"
+                  />
+                  <div
+                    class="absolute top-11 left-0 grid h-5 w-32 place-content-center bg-successCol text-mainBrand"
+                  >
+                    <p>COLLECTION #12</p>
+                  </div>
+                </div>
+                <div
+                  class="grid h-24 place-content-center bg-primaryBrand text-center"
+                >
+                  <h5 class="font-bold">MUGS</h5>
+                  <h5 class="italic">Pastel og dreams</h5>
+                  <p class="font-bold">DKK 480,00</p>
+                </div>
+              </article>
+
+              <article class="col-start-1 col-end-4 w-11/12">
+                <div>
+                  <img
+                    class="h-fill w-full border-t-[1px] border-l-[1px] border-r-[1px] object-cover"
+                    src="img/ddwinemug1.svg"
+                    alt="Product image"
+                    onmouseover="this.src='img/ddwinemug2.svg'"
+                    onmouseout="this.src='img/ddwinemug1.svg'"
+                  />
+                </div>
+                <div
+                  class="grid h-24 place-content-center bg-primaryBrand text-center"
+                >
+                  <h5 class="font-bold">WINEMUGS</h5>
+                  <h5 class="italic">Daydrinking</h5>
+                  <p class="font-bold">DKK 580,00</p>
+                </div>
+              </article>
+
+              <article class="col-start-4 col-end-7 w-11/12">
+                <div class="relative">
+                  <img
+                    class="w-full border-t-[1px] border-l-[1px] border-r-[1px]"
+                    src="img/hotmdholder.svg"
+                    alt="Product image"
+                    onmouseover="this.src='img/hotmdholder2.svg'"
+                    onmouseout="this.src='img/hotmdholder.svg'"
+                  />
+                  <div
+                    class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-detailBrand text-mainBrand"
+                  >
+                    <p>BRAND NEW</p>
+                  </div>
+                  <div
+                    class="absolute top-11 left-0 grid h-5 w-32 place-content-center bg-successCol text-mainBrand"
+                  >
+                    <p>Collection #2</p>
+                  </div>
+                </div>
+                <div
+                  class="grid h-24 place-content-center bg-primaryBrand text-center"
+                >
+                  <h5 class="font-bold">KITCHEN ROLL HOLDER</h5>
+                  <h5 class="italic">Hold on to me dearly</h5>
+                  <p class="font-bold">DKK 695,00</p>
+                </div>
+              </article>
+
+              <article class="col-span-3 col-start-7 w-11/12">
+                <div class="relative">
+                  <img
+                    class="w-full border-t-[1px] border-l-[1px] border-r-[1px]"
+                    src="img/cclampshade1.svg"
+                    alt="Product image"
+                    onmouseover="this.src='img/cclampshade2.svg'"
+                    onmouseout="this.src='img/cclampshade1.svg'"
+                  />
+                </div>
+                <div
+                  class="grid h-24 place-content-center bg-primaryBrand text-center"
+                >
+                  <h5 class="font-bold">LAMPSHADE</h5>
+                  <h5 class="italic">Cucumber cute</h5>
+                  <p class="font-bold">DKK 695,00</p>
+                </div>
+              </article>
+
+              <article class="col-start-1 col-end-7 row-span-2 mr-6">
+                <div>
+                  <img
+                    class="w-full border-t-[1px] border-l-[1px] border-r-[1px]"
+                    src="img/flptmug4.svg"
+                    alt="Product image"
+                    onmouseover="this.src='img/flptmug5.svg'"
+                    onmouseout="this.src='img/flptmug4.svg'"
+                  />
+                </div>
+
+                <div
+                  class="grid h-44 w-full place-content-center bg-primaryBrand text-center"
+                >
+                  <h5 class="font-bold">MUGS</h5>
+                  <h5 class="italic">Felt like pink today</h5>
+                  <p class="font-bold">DKK 480,00</p>
+                </div>
+              </article>
+
+              <article class="col-start-7 col-end-10 mr-6">
+                <div>
+                  <img
+                    class="w-full border-t-[1px] border-l-[1px] border-r-[1px]"
+                    src="img/mfflag1.svg"
+                    alt="Product image"
+                    onmouseover="this.src='img/mfflag2.svg'"
+                    onmouseout="this.src='img/mfflag1.svg'"
+                  />
+                </div>
+
+                <div
+                  class="grid h-24 w-full place-content-center bg-primaryBrand text-center"
+                >
+                  <h5 class="font-bold">DANNEBROG FLAG</h5>
+                  <h5 class="italic">Magrethe's favorite</h5>
+                  <p class="font-bold">DKK 395,00</p>
+                </div>
+              </article>
+
+              <article class="col-start-7 col-end-10 row-span-1 mr-6">
+                <div>
+                  <img
+                    class="w-full border-t-[1px] border-l-[1px] border-r-[1px]"
+                    src="img/gdflag1.svg"
+                    alt="Product image"
+                    onmouseover="this.src='img/gdflag2.svg'"
+                    onmouseout="this.src='img/gdflag1.svg'"
+                  />
+                </div>
+                <div
+                  class="text-sm grid h-24 place-content-center bg-primaryBrand text-center"
+                >
+                  <h5 class="font-bold">DANNEBROG FLAG</h5>
+                  <h5 class="italic">The great Dane</h5>
+                  <p class="font-bold">DKK 395,00</p>
+                </div>
+              </article>
+
+              <article class="col-start-1 col-end-4 w-11/12">
+                <div class="relative">
+                  <img
+                    class="h-fill w-full border-t-[1px] border-l-[1px] border-r-[1px] object-cover"
+                    src="img/tiimatpanimal1.svg"
+                    alt="Product image"
+                    onmouseover="this.src='img/tiimatpanimal2.svg'"
+                    onmouseout="this.src='img/tiimatpanimal1.svg'"
+                  />
+                  <div
+                    class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-secondaryCol text-mainBrand"
+                  >
+                    <p>SOLD OUT</p>
+                  </div>
+                </div>
+                <div
+                  class="grid h-24 place-content-center bg-primaryBrand pt-1 text-center"
+                >
+                  <h5 class="font-bold">CERAMIC ANIMALS</h5>
+                  <h5 class="italic">The ice is melting at the <br />poles</h5>
+                  <p class="font-bold">DKK 220,00</p>
+                </div>
+              </article>
+
+              <article class="col-start-4 col-end-7 w-11/12">
+                <div class="relative">
+                  <img
+                    class="h-fill w-full border-t-[1px] border-l-[1px] border-r-[1px] object-cover"
+                    src="img/ftoylmug1.svg"
+                    alt="Product image"
+                    onmouseover="this.src='img/ftoylmug2.svg'"
+                    onmouseout="this.src='img/ftoylmug1.svg'"
+                  />
+                  <div
+                    class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-secondaryCol text-mainBrand"
+                  >
+                    <p>SOLD OUT</p>
+                  </div>
+                </div>
+                <div
+                  class="grid h-24 place-content-center bg-primaryBrand text-center"
+                >
+                  <h5 class="font-bold">MUGS</h5>
+                  <h5 class="italic">For the ones you love</h5>
+                  <p class="font-bold">DKK 480,00</p>
+                </div>
+              </article>
+
+              <article class="col-span-3 col-start-7 w-11/12">
+                <div class="relative">
+                  <img
+                    class="rotate_mug_left h-fill w-full border-t-[1px] border-l-[1px] border-r-[1px] object-cover"
+                    src="img/ltlomug1.svg"
+                    alt="Product image"
+                  />
+                  <div
+                    class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-secondaryCol text-mainBrand"
+                  >
+                    <p>SOLD OUT</p>
+                  </div>
+                </div>
+                <div
+                  class="grid h-24 place-content-center bg-primaryBrand text-center"
+                >
+                  <h5 class="font-bold">MUGS</h5>
+                  <h5 class="italic">Let the love overflow</h5>
+                  <p class="font-bold">DKK 480,00</p>
+                </div>
+              </article>
             </div>
-
-            <article class="col-start-2">
-              <div>
-                <img
-                  src="img/Santaslipgloss1.png"
-                  onmouseover="this.src='img/Santaslipgloss2.png'"
-                  onmouseout="this.src='img/Santaslipgloss1.png'"
-                />
-              </div>
-              <div class="bg-emerald-400 text-sm">
-                <h5>PRODUCT CATEGORY</h5>
-                <h5>PRODUCT NAME</h5>
-                <p>Price</p>
-              </div>
-            </article>
-
-            <article class="col-start-2 row-span-1">
-              <img src="img/Santaslipgloss1.png" alt="Product image" />
-              <div class="bg-emerald-400 text-sm">
-                <h5>PRODUCT CATEGORY</h5>
-                <h5>PRODUCT NAME</h5>
-                <p>Price</p>
-              </div>
-            </article>
-
-            <article class="col-span-2 col-start-3 row-span-2 row-start-1">
-              <img
-                class="h-fill w-full object-cover"
-                src="img/Santaslipgloss_big.png"
-                alt="Product image"
-              />
-
-              <div class="h-32 bg-emerald-400">
-                <h5>PRODUCT CATEGORY</h5>
-                <h5>PRODUCT NAME</h5>
-                <p>Price</p>
-              </div>
-            </article>
-          </div>
-
-          <div class="grid grid-cols-4">
-            <article class="col-start-2">
-              <img src="img/Santaslipgloss1.png" alt="Product image" />
-              <div class="bg-emerald-400 text-sm">
-                <h5>PRODUCT CATEGORY</h5>
-                <h5>PRODUCT NAME</h5>
-                <p>Price</p>
-              </div>
-            </article>
-
-            <article class="col-start-3">
-              <img src="img/Santaslipgloss1.png" alt="Product image" />
-              <div class="bg-emerald-400 text-sm">
-                <h5>PRODUCT CATEGORY</h5>
-                <h5>PRODUCT NAME</h5>
-                <p>Price</p>
-              </div>
-            </article>
-
-            <article class="col-start-4">
-              <img src="img/Santaslipgloss1.png" alt="Product image" />
-              <div class="bg-emerald-400 text-sm">
-                <h5>PRODUCT CATEGORY</h5>
-                <h5>PRODUCT NAME</h5>
-                <p>Price</p>
-              </div>
-            </article>
-          </div>
-
-          <div class="grid grid-cols-4">
-            <article class="col-start-2">
-              <img src="img/Santaslipgloss1.png" alt="Product image" />
-              <div class="bg-emerald-400 text-sm">
-                <h5>PRODUCT CATEGORY</h5>
-                <h5>PRODUCT NAME</h5>
-                <p>Price</p>
-              </div>
-            </article>
-
-            <article class="col-start-3">
-              <img src="img/Santaslipgloss1.png" alt="Product image" />
-              <div class="bg-emerald-400 text-sm">
-                <h5>PRODUCT CATEGORY</h5>
-                <h5>PRODUCT NAME</h5>
-                <p>Price</p>
-              </div>
-            </article>
-
-            <article class="col-start-4">
-              <img src="img/Santaslipgloss1.png" alt="Product image" />
-              <div class="bg-emerald-400 text-sm">
-                <h5>PRODUCT CATEGORY</h5>
-                <h5>PRODUCT NAME</h5>
-                <p>Price</p>
-              </div>
-            </article>
-          </div>
-
-          <div class="grid grid-cols-4">
-            <article class="col-start-2">
-              <img src="img/Santaslipgloss1.png" alt="Product image" />
-              <div class="bg-emerald-400 text-sm">
-                <h5>PRODUCT CATEGORY</h5>
-                <h5>PRODUCT NAME</h5>
-                <p>Price</p>
-              </div>
-            </article>
-
-            <article class="col-start-3">
-              <img src="img/Santaslipgloss1.png" alt="Product image" />
-              <div class="bg-emerald-400 text-sm">
-                <h5>PRODUCT CATEGORY</h5>
-                <h5>PRODUCT NAME</h5>
-                <p>Price</p>
-              </div>
-            </article>
-
-            <article class="col-start-4">
-              <img src="img/Santaslipgloss1.png" alt="Product image" />
-              <div class="bg-emerald-400 text-sm">
-                <h5>PRODUCT CATEGORY</h5>
-                <h5>PRODUCT NAME</h5>
-                <p>Price</p>
-              </div>
-            </article>
-          </div>
-
-          <div class="grid grid-cols-4">
-            <article class="col-span-2 col-start-2 row-span-2 row-start-1">
-              <img
-                class="h-fill w-full object-cover"
-                src="img/Santaslipgloss_big.png"
-                alt="Product image"
-              />
-
-              <div class="h-32 bg-emerald-400">
-                <h5>PRODUCT CATEGORY</h5>
-                <h5>PRODUCT NAME</h5>
-                <p>Price</p>
-              </div>
-            </article>
-            <article class="col-start-4">
-              <div>
-                <img
-                  src="img/Santaslipgloss1.png"
-                  onmouseover="this.src='img/Santaslipgloss2.png'"
-                  onmouseout="this.src='img/Santaslipgloss1.png'"
-                />
-              </div>
-              <div class="bg-emerald-400 text-sm">
-                <h5>PRODUCT CATEGORY</h5>
-                <h5>PRODUCT NAME</h5>
-                <p>Price</p>
-              </div>
-            </article>
-
-            <article class="col-start-4 row-span-1">
-              <img src="img/Santaslipgloss1.png" alt="Product image" />
-              <div class="bg-emerald-400 text-sm">
-                <h5>PRODUCT CATEGORY</h5>
-                <h5>PRODUCT NAME</h5>
-                <p>Price</p>
-              </div>
-            </article>
-          </div>
-
-          <div class="grid grid-cols-4">
-            <article class="col-start-2">
-              <img src="img/Santaslipgloss1.png" alt="Product image" />
-              <div class="bg-emerald-400 text-sm">
-                <h5>PRODUCT CATEGORY</h5>
-                <h5>PRODUCT NAME</h5>
-                <p>Price</p>
-              </div>
-            </article>
-
-            <article class="col-start-3">
-              <img src="img/Santaslipgloss1.png" alt="Product image" />
-              <div class="bg-emerald-400 text-sm">
-                <h5>PRODUCT CATEGORY</h5>
-                <h5>PRODUCT NAME</h5>
-                <p>Price</p>
-              </div>
-            </article>
-
-            <article class="col-start-4">
-              <img src="img/Santaslipgloss1.png" alt="Product image" />
-              <div class="bg-emerald-400 text-sm">
-                <h5>PRODUCT CATEGORY</h5>
-                <h5>PRODUCT NAME</h5>
-                <p>Price</p>
-              </div>
-            </article>
           </div>
         </div>
       </section>
     </main>
+    <footer>
+      <div class="flex justify-between bg-thirdBrand py-5 px-10 text-mainBrand">
+        <div>
+          <div class="pb-2">
+            <a class="font-robotoCondensed text-footer font-bold" href="#"
+              >ABOUT</a
+            >
+            <br />
+          </div>
+
+          <a class="font-robotoCondensed text-footer font-bold" href="#"
+            >TERMS</a
+          >
+
+          <div class="pl-8 pb-2 font-robotoCondensed text-footer">
+            <a href="#"
+              ><span class="italic text-detailBrand">Mmmm, cookies</span> -
+              Cookies policy</a
+            >
+            <br />
+            <a href="#"
+              ><span class="italic text-detailBrand"
+                >W've got your privacy</span
+              >
+              - Privacy policy</a
+            >
+            <br />
+            <a href="#"
+              ><span class="italic text-detailBrand">What goes around</span> -
+              Return policy</a
+            >
+            <br />
+            <a href="#"
+              ><span class="italic text-detailBrand">And then she asked..</span>
+              - FAQ's</a
+            >
+          </div>
+          <div class="pb-2">
+            <a class="font-robotoCondensed text-footer font-bold" href="#"
+              >CONTACT US</a
+            >
+            <br />
+          </div>
+          <div class="pb-10">
+            <a class="font-robotoCondensed text-footer font-bold" href="#"
+              >SITEMAP</a
+            >
+          </div>
+          <div class="flex h-[25px] w-[25] gap-5">
+            <img src="img/instagram.png" alt="Instagram icon" />
+            <img src="img/facebook.png" alt="Facebook icon" />
+            <img src="img/pinterest.png" alt="Pinterest icon" />
+          </div>
+        </div>
+        <div class="relative w-1/4">
+          <p class="absolute bottom-0 font-robotoCondensed text-[18px]">
+            &#169; Copyright - The Clay Play 2022
+          </p>
+        </div>
+        <div>
+          <h3 class="font-robotoCondensed text-h3Desktop font-bold">
+            NEWSLETTER
+          </h3>
+          <p class="font-lora text-footer">
+            Sign up and get the hottes clay news
+          </p>
+          <form class="mb-10 mt-4 flex h-[45px] w-[340px]">
+            <input
+              class="w-[340px] border-[1px] bg-thirdBrand"
+              id="email"
+              name="email"
+              placeholder="Enter your email here"
+            />
+            <a
+              href="#"
+              class="bg-mainBrand px-8 py-2 text-center text-footer text-primaryCol"
+            >
+              APPLY
+            </a>
+          </form>
+          <div class="border-white border-t-[1px]">
+            <h3 class="font-robotoCondensed text-h3Desktop font-bold">
+              THE CLAY PLAY <br />
+              SHOP, ATELIER & WORKSHOP
+            </h3>
+          </div>
+          <address class="font-lora text-footer">
+            Agtoftsvej 7 C <br />
+            6400 Sønderborg <br />Denmark <br />
+            <br />Tlf. +45 22 50 24 66 <br />
+            CVR/VAT: DK30618025
+          </address>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="main.js"></script>
     <script type="module" src="js/login.js"></script>
   </body>

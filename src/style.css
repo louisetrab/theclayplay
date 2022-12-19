@@ -11,3 +11,169 @@
 img {
   max-width: 100%;
 }
+
+/* ------- Giftwrapping image ------- */
+.my-text:hover::before {
+  content: "";
+  display: inline-block;
+  background-image: url("img/giftwrapping.png");
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat;
+  margin-left: 300px;
+  position: absolute;
+  z-index: 1;
+  animation: dropAnimation 0.5s ease-in-out;
+}
+
+@keyframes dropAnimation {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ------- Newsletter input field ------- */
+.footer_info {
+  display: table;
+}
+div.newsletter {
+  display: table-cell;
+  width: 100%;
+}
+div.newsletter > input {
+  width: 100%;
+}
+
+/* ------- Kitchen roll holder animation ------- */
+.holder_box:hover .holder_img {
+  transform: translateY(-100%);
+  animation: holderAnimation 0.3s forwards;
+}
+
+@keyframes holderAnimation {
+  0% {
+    transform: translateY(0%);
+  }
+  20% {
+    transform: translateY(-100%);
+  }
+  40% {
+    transform: translateY(-85%);
+  }
+  60% {
+    transform: translateY(-100%);
+  }
+  80% {
+    transform: translateY(-85%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes diagonalMove {
+  0% {
+    transform: skewX(20deg);
+  }
+  100% {
+    transform: skewX(-20deg);
+  }
+}
+
+.holder_box:hover .brand_new {
+  transform: translateY(100%);
+  animation: diagonalMove 0.5s, lableAnimation 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes lableAnimation {
+  0% {
+    transform: translateY(0%);
+  }
+  20% {
+    transform: translateY(1400%);
+  }
+  40% {
+    transform: translateY(1185%);
+  }
+  60% {
+    transform: translateY(1400%);
+  }
+  80% {
+    transform: translateY(1185%);
+  }
+  100% {
+    transform: translateY(1200%);
+  }
+}
+
+.holder_box:hover .collection_19 {
+  transform: translateY(100%);
+  animation: lableAnimation 0.3s;
+  animation-fill-mode: forwards;
+}
+
+/* ------- Mug Rotation Animation ------- */
+.rotate_mug:hover {
+  animation: rotateMug 0.7s ease forwards;
+}
+
+@keyframes rotateMug {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.rotate_mug_left:hover {
+  animation: rotateMug 0.7s ease forwards;
+}
+
+@keyframes rotateMug {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+
+/* ------- Mug scale animation ------- */
+.scale_img {
+  opacity: 0;
+}
+
+.scale_mug:hover .scale_img {
+  transform: scale(2);
+}
+
+input[type="text"] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* ------- Nav dropdown ------- */
+
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.carousel img {
+  width: 33%; /* Adjust the width to display the desired number of images in view */
+  height: auto;
+  margin-right: 20px; /* Add some space between the images */
+}
