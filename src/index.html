@@ -57,9 +57,9 @@
       </nav>
     </header>
 
-    <main class="pb-48">
-      <!-- ------- Hero ------- -->
-      <section>
+    <main class="pb-10 desktop:pb-48">
+      <!-- ------- Hero Desktop------- -->
+      <section class="hidden desktop:block">
         <div class="relative h-1/2 w-[80rem]">
           <img src="img/hero_desktopv2.png" alt="Hero image" />
           <div
@@ -70,6 +70,26 @@
               WE WILL COLOR UP YOUR DAY WITH UNIKA CERAMICS
             </h1>
             <h3 class="text-center text-h3Desktop">COME PLAY WITH US</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------- Hero Mobile ------- -->
+      <section class="block desktop:hidden">
+        <div class="relative h-1/2 desktop:w-[80rem]">
+          <img src="img/hero_mobile.png" alt="Hero image" />
+          <div
+            class="absolute top-1/4 left-[3px] font-bold text-primaryCol desktop:w-[80rem]"
+          >
+            <h4 class="desktop:text-left-24 ml-24 text-h4">
+              WE'RE THE CLAY PLAY
+            </h4>
+            <h1 class="dekstop:text-h1Desktop text-center text-h1Mobile">
+              WE WILL COLOR UP YOUR DAY WITH UNIKA CERAMICS
+            </h1>
+            <h3 class="text-center text-h3Mobile desktop:text-h3Desktop">
+              COME PLAY WITH US
+            </h3>
           </div>
         </div>
       </section>
@@ -113,10 +133,10 @@
         ALL OUR PRODUCTS
       </h2>
       <section class="mx-5 font-robotoCondensed">
-        <div class="grid grid-cols-10">
-          <div class="">
+        <div class="desktop:grid desktop:grid-cols-10">
+          <div class="hidden desktop:block">
             <ul
-              class="col-span-2 col-start-1 row-span-2 w-[188px] pl-5 text-primaryCol"
+              class="pl-5 text-primaryCol desktop:col-span-2 desktop:col-start-1 desktop:row-span-2 desktop:w-[188px]"
             >
               <li class="flex gap-2 pb-[16px] pt-12 font-bold text-detailBrand">
                 <img src="img/active.svg" alt="active" />
@@ -164,9 +184,13 @@
           </div>
 
           <!-- -------Articles------- -->
-          <div class="bg-blue-500 col-span-9 col-start-3">
-            <div class="grid grid-cols-9">
-              <article class="col-start-1 col-end-4 mr-6">
+          <div class="bg-blue-500 desktop:col-span-9 desktop:col-start-3">
+            <div
+              class="grid grid-cols-4 gap-5 desktop:grid desktop:grid-cols-9"
+            >
+              <article
+                class="col-start-1 col-end-3 desktop:col-start-1 desktop:col-end-4 desktop:mr-6"
+              >
                 <div class="relative">
                   <img
                     class="w-full border-t-[1px] border-l-[1px] border-r-[1px]"
@@ -181,7 +205,7 @@
                   </div>
                 </div>
                 <div
-                  class="text-sm grid h-24 place-content-center bg-primaryBrand text-center"
+                  class="grid h-24 place-content-center bg-primaryBrand text-center"
                 >
                   <h5 class="font-bold">MUGS</h5>
                   <h5 class="italic">Blue blue river</h5>
@@ -189,10 +213,37 @@
                 </div>
               </article>
 
-              <article class="col-start-4 col-end-10 row-span-2 mr-6">
+              <article
+                class="col-start-3 col-end-5 block desktop:col-start-1 desktop:col-end-4 desktop:mr-6 desktop:hidden"
+              >
                 <div class="relative">
                   <img
-                    class="h-fill w-full border-t-[1px] border-l-[1px] border-r-[1px] object-cover"
+                    class="w-full border-t-[1px] border-l-[1px] border-r-[1px]"
+                    src="img/bdflag1.svg"
+                    onmouseover="this.src='img/bdflag2.svg'"
+                    onmouseout="this.src='img/bdflag1.svg'"
+                  />
+                  <div
+                    class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-detailBrand text-mainBrand"
+                  >
+                    <p>BRAND NEW</p>
+                  </div>
+                </div>
+                <div
+                  class="grid h-24 place-content-center bg-primaryBrand text-center"
+                >
+                  <h5 class="font-bold">DANNAEBROG FLAG</h5>
+                  <h5 class="italic">Birthday edition</h5>
+                  <p class="font-bold">DKK 395,00</p>
+                </div>
+              </article>
+
+              <article
+                class="col-start-3 col-end-5 mr-6 hidden desktop:col-start-4 desktop:col-end-10 desktop:row-span-2 desktop:block"
+              >
+                <div class="relative">
+                  <img
+                    class="desktop:h-fill w-full border-t-[1px] border-l-[1px] border-r-[1px] desktop:object-cover"
                     src="img/bdflag1.svg"
                     alt="Product image"
                     onmouseover="this.src='img/bdflag2.svg'"
@@ -206,7 +257,7 @@
                 </div>
 
                 <div
-                  class="grid h-44 w-full place-content-center bg-primaryBrand text-center"
+                  class="grid h-24 w-full place-content-center bg-primaryBrand text-center desktop:h-44"
                 >
                   <h5 class="font-bold">DANNEBROG FLAG</h5>
                   <h5 class="italic">Birthday edition</h5>
@@ -214,7 +265,9 @@
                 </div>
               </article>
 
-              <article class="col-start-1 col-end-4 row-span-1 mr-6">
+              <article
+                class="col-start-1 col-end-3 mr-6 hidden desktop:col-start-1 desktop:col-end-4 desktop:row-span-1 desktop:block"
+              >
                 <div class="relative">
                   <img
                     class="rotate_mug w-full border-t-[1px] border-l-[1px] border-r-[1px]"
@@ -233,7 +286,7 @@
                   </div>
                 </div>
                 <div
-                  class="text-sm grid h-24 place-content-center bg-primaryBrand text-center"
+                  class="grid h-24 place-content-center bg-primaryBrand text-center"
                 >
                   <h5 class="font-bold">Mugs</h5>
                   <h5 class="italic">Filled with hugs and kisses</h5>
@@ -241,31 +294,9 @@
                 </div>
               </article>
 
-              <article class="col-start-1 col-end-4 w-11/12">
-                <div class="relative">
-                  <img
-                    class="h-fill w-full border-t-[1px] border-l-[1px] border-r-[1px] object-cover"
-                    src="img/bbcandleholder1.svg"
-                    alt="Product image"
-                    onmouseover="this.src='img/bbcandleholder2.svg'"
-                    onmouseout="this.src='img/bbcandleholder1.svg'"
-                  />
-                  <div
-                    class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-detailBrand text-mainBrand"
-                  >
-                    <p>BRAND NEW</p>
-                  </div>
-                </div>
-                <div
-                  class="grid h-24 place-content-center bg-primaryBrand text-center"
-                >
-                  <h5 class="font-bold">CANDLEHOLDERS</h5>
-                  <h5 class="italic">Bluebird</h5>
-                  <p class="font-bold">DKK 220,00</p>
-                </div>
-              </article>
-
-              <article class="col-start-4 col-end-7 w-11/12">
+              <article
+                class="dekstop:w-11/12 col-start-1 col-end-3 block desktop:col-start-1 desktop:col-end-4 desktop:hidden"
+              >
                 <div class="relative">
                   <img
                     class="h-fill w-full border-t-[1px] border-l-[1px] border-r-[1px] object-cover"
@@ -289,7 +320,61 @@
                 </div>
               </article>
 
-              <article class="col-span-3 col-start-7 w-11/12">
+              <article
+                class="dekstop:w-11/12 col-start-3 col-end-5 desktop:col-start-1 desktop:col-end-4 desktop:w-11/12"
+              >
+                <div class="relative">
+                  <img
+                    class="h-fill w-full border-t-[1px] border-l-[1px] border-r-[1px] object-cover"
+                    src="img/bbcandleholder1.svg"
+                    alt="Product image"
+                    onmouseover="this.src='img/bbcandleholder2.svg'"
+                    onmouseout="this.src='img/bbcandleholder1.svg'"
+                  />
+                  <div
+                    class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-detailBrand text-mainBrand"
+                  >
+                    <p>BRAND NEW</p>
+                  </div>
+                </div>
+                <div
+                  class="grid h-24 place-content-center bg-primaryBrand text-center"
+                >
+                  <h5 class="font-bold">CANDLEHOLDERS</h5>
+                  <h5 class="italic">Bluebird</h5>
+                  <p class="font-bold">DKK 220,00</p>
+                </div>
+              </article>
+
+              <article
+                class="col-start-1 col-end-3 desktop:col-start-4 desktop:col-end-7 desktop:w-11/12"
+              >
+                <div class="relative">
+                  <img
+                    class="h-fill w-full border-t-[1px] border-l-[1px] border-r-[1px] object-cover"
+                    src="img/ssbcandleholder1.svg"
+                    alt="Product image"
+                    onmouseover="this.src='img/ssbcandleholder2.svg'"
+                    onmouseout="this.src='img/ssbcandleholder1.svg'"
+                  />
+                  <div
+                    class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-detailBrand text-mainBrand"
+                  >
+                    <p>BRAND NEW</p>
+                  </div>
+                </div>
+                <div
+                  class="grid h-24 place-content-center bg-primaryBrand text-center"
+                >
+                  <h5 class="font-bold">CANDLEHOLDERS</h5>
+                  <h5 class="italic">Sunshine bright</h5>
+                  <p class="font-bold">DKK 220,00</p>
+                </div>
+              </article>
+
+              <article
+                class="col-start-3 col-end-5 desktop:col-span-3 desktop:col-start-7 desktop:w-11/12"
+              >
                 <div class="relative">
                   <img
                     class="h-fill w-full border-t-[1px] border-l-[1px] border-r-[1px] object-cover"
@@ -313,7 +398,9 @@
                 </div>
               </article>
 
-              <article class="col-start-1 col-end-4 w-11/12">
+              <article
+                class="col-start-1 col-end-3 desktop:col-start-1 desktop:col-end-4 desktop:w-11/12"
+              >
                 <img
                   class="w-full border-t-[1px] border-l-[1px] border-r-[1px]"
                   src="img/slgwreath1.svg"
@@ -330,7 +417,9 @@
                 </div>
               </article>
 
-              <article class="col-start-4 col-end-7 w-11/12">
+              <article
+                class="col-start-3 col-end-5 desktop:col-start-4 desktop:col-end-7 desktop:w-11/12"
+              >
                 <div class="relative">
                   <img
                     class="h-fill w-full border-t-[1px] border-l-[1px] border-r-[1px] object-cover"
@@ -354,7 +443,9 @@
                 </div>
               </article>
 
-              <article class="col-span-3 col-start-7 w-11/12">
+              <article
+                class="col-start-1 col-end-3 desktop:col-span-3 desktop:col-start-7 desktop:w-11/12"
+              >
                 <div class="relative">
                   <img
                     class="h-fill w-full border-t-[1px] border-l-[1px] border-r-[1px] object-cover"
@@ -378,7 +469,9 @@
                 </div>
               </article>
 
-              <article class="col-start-1 col-end-4 w-11/12">
+              <article
+                class="col-start-3 col-end-5 desktop:col-start-1 desktop:col-end-4 desktop:w-11/12"
+              >
                 <div>
                   <img
                     class="h-fill w-full border-t-[1px] border-l-[1px] border-r-[1px] object-cover"
@@ -397,7 +490,9 @@
                 </div>
               </article>
 
-              <article class="col-start-4 col-end-7 w-11/12">
+              <article
+                class="col-start-1 col-end-3 desktop:col-start-4 desktop:col-end-7 desktop:w-11/12"
+              >
                 <div class="relative">
                   <img
                     class="w-full border-t-[1px] border-l-[1px] border-r-[1px]"
@@ -426,7 +521,9 @@
                 </div>
               </article>
 
-              <article class="col-span-3 col-start-7 w-11/12">
+              <article
+                class="col-start-3 col-end-5 desktop:col-span-3 desktop:col-start-7 desktop:w-11/12"
+              >
                 <div class="relative">
                   <img
                     class="w-full border-t-[1px] border-l-[1px] border-r-[1px]"
@@ -445,7 +542,9 @@
                 </div>
               </article>
 
-              <article class="col-start-1 col-end-7 row-span-2 mr-6">
+              <article
+                class="col-start-1 col-end-3 desktop:col-start-1 desktop:col-end-7 desktop:row-span-2 desktop:mr-6"
+              >
                 <div>
                   <img
                     class="w-full border-t-[1px] border-l-[1px] border-r-[1px]"
@@ -457,7 +556,7 @@
                 </div>
 
                 <div
-                  class="grid h-44 w-full place-content-center bg-primaryBrand text-center"
+                  class="grid h-24 w-full place-content-center bg-primaryBrand text-center desktop:h-44"
                 >
                   <h5 class="font-bold">MUGS</h5>
                   <h5 class="italic">Felt like pink today</h5>
@@ -465,7 +564,9 @@
                 </div>
               </article>
 
-              <article class="col-start-7 col-end-10 mr-6">
+              <article
+                class="col-start-3 col-end-5 desktop:col-start-7 desktop:col-end-10 desktop:mr-6"
+              >
                 <div>
                   <img
                     class="w-full border-t-[1px] border-l-[1px] border-r-[1px]"
@@ -485,7 +586,9 @@
                 </div>
               </article>
 
-              <article class="col-start-7 col-end-10 row-span-1 mr-6">
+              <article
+                class="col-start-1 col-end-3 desktop:col-start-7 desktop:col-end-10 desktop:row-span-1 desktop:mr-6"
+              >
                 <div>
                   <img
                     class="w-full border-t-[1px] border-l-[1px] border-r-[1px]"
@@ -504,7 +607,9 @@
                 </div>
               </article>
 
-              <article class="col-start-1 col-end-4 w-11/12">
+              <article
+                class="col-start-3 col-end-5 desktop:col-start-1 desktop:col-end-4 desktop:w-11/12"
+              >
                 <div class="relative">
                   <img
                     class="h-fill w-full border-t-[1px] border-l-[1px] border-r-[1px] object-cover"
@@ -528,7 +633,9 @@
                 </div>
               </article>
 
-              <article class="col-start-4 col-end-7 w-11/12">
+              <article
+                class="col-start-1 col-end-3 desktop:col-start-4 desktop:col-end-7 desktop:w-11/12"
+              >
                 <div class="relative">
                   <img
                     class="h-fill w-full border-t-[1px] border-l-[1px] border-r-[1px] object-cover"
@@ -552,7 +659,9 @@
                 </div>
               </article>
 
-              <article class="col-span-3 col-start-7 w-11/12">
+              <article
+                class="col-start-3 col-end-5 desktop:col-span-3 desktop:col-start-7 desktop:w-11/12"
+              >
                 <div class="relative">
                   <img
                     class="rotate_mug_left h-fill w-full border-t-[1px] border-l-[1px] border-r-[1px] object-cover"
@@ -573,13 +682,23 @@
                   <p class="font-bold">DKK 480,00</p>
                 </div>
               </article>
+              <p class="col-start-2 col-end-6 hidden desktop:block">
+                <span class="font-bold">PAGE 1</span>&nbsp;I&nbsp;PAGE
+                2&nbsp;I&nbsp;...&nbsp;I&nbsp;PAGE 11
+              </p>
+              <p class="col-start-2 col-end-4 block desktop:hidden">
+                <span class="font-bold">PAGE 1</span
+                >&nbsp;&nbsp;I&nbsp;&nbsp;...&nbsp;&nbsp;I&nbsp;&nbsp;PAGE 11
+              </p>
             </div>
           </div>
         </div>
       </section>
     </main>
     <footer>
-      <div class="flex justify-between bg-thirdBrand py-5 px-10 text-mainBrand">
+      <div
+        class="bg-thirdBrand py-5 px-5 text-mainBrand desktop:flex desktop:justify-between desktop:px-10"
+      >
         <div>
           <div class="pb-2">
             <a class="font-robotoCondensed text-footer font-bold" href="#"
@@ -592,7 +711,7 @@
             >TERMS</a
           >
 
-          <div class="pl-8 pb-2 font-robotoCondensed text-footer">
+          <div class="pl-5 pb-2 font-robotoCondensed text-footer desktop:pl-8">
             <a href="#"
               ><span class="italic text-detailBrand">Mmmm, cookies</span> -
               Cookies policy</a
@@ -632,19 +751,25 @@
             <img src="img/pinterest.png" alt="Pinterest icon" />
           </div>
         </div>
-        <div class="relative w-1/4">
-          <p class="absolute bottom-0 font-robotoCondensed text-[18px]">
+        <div class="relative hidden desktop:block desktop:w-1/4">
+          <p
+            class="font-robotoCondensed text-[18px] desktop:absolute desktop:bottom-0"
+          >
             &#169; Copyright - The Clay Play 2022
           </p>
         </div>
         <div>
-          <h3 class="font-robotoCondensed text-h3Desktop font-bold">
+          <h3
+            class="pt-10 font-robotoCondensed text-h3Mobile font-bold desktop:text-h3Desktop"
+          >
             NEWSLETTER
           </h3>
-          <p class="font-lora text-footer">
+          <p class="pb-4 font-lora text-footer">
             Sign up and get the hottes clay news
           </p>
-          <form class="mb-10 mt-4 flex h-[45px] w-[340px]">
+          <form
+            class="flex desktop:mt-4 desktop:mb-10 desktop:h-[45px] desktop:w-[340px]"
+          >
             <input
               class="w-[340px] border-[1px] bg-thirdBrand"
               id="email"
@@ -658,8 +783,18 @@
               APPLY
             </a>
           </form>
-          <div class="border-white border-t-[1px]">
-            <h3 class="font-robotoCondensed text-h3Desktop font-bold">
+          <div class="border-white mt-16 border-t-[1px]">
+            <h3
+              class="block pb-2 font-robotoCondensed text-h3Mobile font-bold desktop:hidden desktop:text-h3Desktop"
+            >
+              THE CLAY PLAY <br />
+              SHOP, ATELIER & <br />
+              WORKSHOP
+            </h3>
+
+            <h3
+              class="hidden font-robotoCondensed text-h3Mobile font-bold desktop:block desktop:text-h3Desktop"
+            >
               THE CLAY PLAY <br />
               SHOP, ATELIER & WORKSHOP
             </h3>
@@ -670,6 +805,11 @@
             <br />Tlf. +45 22 50 24 66 <br />
             CVR/VAT: DK30618025
           </address>
+          <p
+            class="block pt-5 text-center font-robotoCondensed text-[18px] desktop:absolute desktop:bottom-0 desktop:hidden"
+          >
+            &#169; Copyright - The Clay Play 2022
+          </p>
         </div>
       </div>
     </footer>
