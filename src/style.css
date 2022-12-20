@@ -205,9 +205,6 @@ label {
   border: none;
   outline: none;
   padding: 14px 16px;
-  /* background-color: inherit; */
-  /* font: inherit; */
-  /* margin: 0; */
 }
 
 .dropdown-content {
@@ -222,7 +219,6 @@ label {
 
 .dropdown-content .header {
   padding: 16px;
-  color: white;
 }
 
 .dropdown:hover .dropdown-content {
@@ -234,20 +230,15 @@ label {
   float: left;
   width: 19.4%;
   padding: 10px;
-  height: 350px;
+  height: 405px;
 }
 
 .column a {
   float: none;
-  color: black;
   padding: 16px;
   text-decoration: none;
   display: block;
   text-align: left;
-}
-
-.column a:hover {
-  background-color: #ddd;
 }
 
 /* Clear floats after the columns */
