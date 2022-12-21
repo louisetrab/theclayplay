@@ -217,8 +217,11 @@
 
     <main class="pb-20 desktop:pb-48">
       <!-- ------- Breadcrumb ------- -->
-      <section class="flex font-lora" aria-label="Breadcrumb">
-        <ol class="md:space-x-3 inline-flex items-center space-x-1">
+      <section
+        class="flex font-lora text-breadcrumbsMobile desktop:text-breadcrumbsDesktop"
+        aria-label="Breadcrumb"
+      >
+        <ol class="inline-flex items-center space-x-1">
           <li>
             <div class="flex items-center">
               <a
@@ -266,10 +269,10 @@
       </section>
 
       <!-- ------- Product header ------- -->
-      <section class="mx-5 desktop:grid desktop:grid-cols-12">
-        <div class="w-[390px] desktop:col-start-4 desktop:col-end-9">
+      <section class="mx-4 desktop:grid desktop:grid-cols-12">
+        <div class="desktop:col-start-4 desktop:col-end-9">
           <h2
-            class="ml-5 mt-16 mb-10 font-robotoCondensed text-h2Mobile font-bold desktop:text-h2Desktop"
+            class="ml-5 mt-16 mb-16 font-robotoCondensed text-h2Mobile font-bold desktop:text-h2Desktop"
           >
             BOWLS
           </h2>
@@ -541,9 +544,7 @@
     <script>
       // ------- Slidein cart -------
       let openPanelButton = document.getElementById("open-panel");
-      let openSingleButton = document.getElementById("singlebtn");
       let closePanelButton = document.getElementById("close-panel");
-      let closeBtnButton = document.getElementById("closecheck");
       let cartPanel = document.querySelector(".cart-panel");
 
       openPanelButton.onclick = () => {
@@ -551,17 +552,7 @@
         openPanelButton.classList.add("hide");
       };
 
-      openSingleButton.onclick = () => {
-        cartPanel.classList.add("open");
-        openSingleButton.classList.add("hide");
-      };
-
       closePanelButton.onclick = () => {
-        cartPanel.classList.remove("open");
-        openPanelButton.classList.remove("hide");
-      };
-
-      closeBtnButton.onclick = () => {
         cartPanel.classList.remove("open");
         openPanelButton.classList.remove("hide");
       };

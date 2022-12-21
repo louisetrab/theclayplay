@@ -14,52 +14,185 @@
     <!-- ------- Navigation ------- -->
     <header>
       <div
-        class="text-white h-6 w-full bg-thirdBrand text-center font-robotoCondensed text-mainBrand"
+        class="text-white h-6 w-full bg-thirdBrand text-center font-robotoCondensed text-bannerSmall text-mainBrand desktop:text-bannerBig"
       >
         <p>FREE DELIVERY FROM DKK 499 WITH SELECTED METHODS</p>
       </div>
-      <nav class="banner">
-        <div>
-          <div class="flex justify-between">
-            <a class="logov2" href="index.html"
-              ><img class="h-20 w-52" src="img/logov2.png" alt="logo" />
-            </a>
 
-            <div>
-              <ul class="flex items-center justify-center font-robotoCondensed">
-                <li>
-                  <a href="category-mugs.html">WEBSHOP &nbsp; I &nbsp;</a>
-                </li>
-                <li><a href="payflow.html">ABOUT</a></li>
-              </ul>
+      <div class="cart-panel">
+        <div class="cart-header">
+          <h3
+            class="font-robotoCondensed text-h3Mobile font-bold text-primaryCol desktop:text-h3Desktop"
+          >
+            YOUR CART
+          </h3>
+          <button id="close-panel"><p>X</p></button>
+        </div>
+
+        <div class="cart-content">
+          <div class="products">
+            <p
+              class="mb-10 border-b-[1px] font-lora text-bodySmall font-bold text-primaryCol"
+            >
+              Spend 0 kr more and get free shipping with selected shipping
+              methods
+            </p>
+            <div class="product my-10">
+              <p class="font-lora text-bodySmall">Your cart is empty</p>
             </div>
+            <div class="grid grid-rows-4">
+              <div class="row-start-5 flex justify-between border-b-[1px]">
+                <p class="font-lora text-body text-primaryCol">Subtotal</p>
+                <div class="flex gap-3 text-primaryCol">
+                  <h4 class="font-robotoCondensed text-h4 font-bold">DKK</h4>
+                  <p class="font-lora text-body">00.00</p>
+                </div>
+              </div>
+              <p class="font-lora text-bodySmall font-bold">Order Note</p>
+              <p class="font-lora text-bodySmall leading-none">
+                Shipping and taxes are calculated at checkout.
+              </p>
+            </div>
+          </div>
+          <div class="flex place-content-center gap-5">
+            <div
+              class="bg-primaryCol py-3 px-6 font-robotoCondensed text-[14px] text-mainBrand"
+            >
+              <button>Keep shopping</button>
+            </div>
+            <div
+              class="border-[1px] bg-mainBrand py-3 px-6 font-robotoCondensed text-[14px] text-primaryCol"
+            >
+              <button>Go to checkout</button>
+            </div>
+          </div>
+          <div>
+            <a class="font-lora text-bodySmall font-bold underline" href="#"
+              >Shipping</a
+            >
+            <a class="font-lora text-bodySmall font-bold underline" href="#"
+              >Go to checkout</a
+            >
+          </div>
+        </div>
+      </div>
 
-            <div class="flex">
-              <ul class="flex font-robotoCondensed">
-                <li>CURRENCY I &nbsp;</li>
-                <li class="mr-10">DKK</li>
-              </ul>
-              <ul class="flex">
-                <img
-                  class="h-5 w-5"
-                  src="img/searchicon.png"
-                  alt="Search Icon"
-                />
-                <img class="h-5 w-5" src="img/carticon.png" alt="Cart Icon" />
+      <nav class="navbar">
+        <a href="index.html"
+          ><img class="h-[34px] w-[160px]" src="img/logov2.svg"
+        /></a>
+        <div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              WEBSHOP
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div
+              class="dropdown-content font-robotoCondensed leading-none text-primaryCol"
+            >
+              <div class="header">
+                <h4 class="font-robotoCondensed text-h4 font-bold">
+                  ALL PRODUCTS
+                </h4>
+              </div>
+              <ul class="row">
+                <div class="column">
+                  <li><h4 class="text-h4 font-bold">INTERIOR</h4></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">CANDLEHOLDERS</a>
+                  </li>
+                  <li class="text-menuDesktop"><a href="#">LAMP SHADES</a></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">WALL DECORATION</a>
+                  </li>
+                  <li class="text-menuDesktop">
+                    <a href="#">CERAMIC CANDLES</a>
+                  </li>
+                  <li class="text-menuDesktop">
+                    <a href="category-empty.html">BOWLS</a>
+                  </li>
+                  <li class="text-menuDesktop"><a href="#">VASES</a></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">CERAMIC ANIMALS</a>
+                  </li>
+                  <li class="text-menuDesktop"><a href="#">PLANTERS</a></li>
+                </div>
+                <div class="column">
+                  <li><h4 class="text-h4 font-bold">FLAGS</h4></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">DANNEBROG FLAG</a>
+                  </li>
+                  <li class="text-menuDesktop"><a href="#">CLOWN FLAG</a></li>
+                  <li class="text-menuDesktop"><a href="#">NAME FLAG</a></li>
+                  <li class="text-menuDesktop"><a href="#">RAINBOW FLAG</a></li>
+                  <li class="text-menuDesktop"><a href="#">WORLS FLAG</a></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">HARLEQUIN FLAG</a>
+                  </li>
+                </div>
+                <div class="column">
+                  <li><h4 class="text-h4 font-bold">KITCHEN</h4></li>
+                  <li class="text-menuDesktop">
+                    <a href="category-mugs.html">MUGS</a>
+                  </li>
+                  <li class="text-menuDesktop">
+                    <a href="#">COFFEE DRIPPERS</a>
+                  </li>
+                  <li class="text-menuDesktop"><a href="#">WINE CUPS</a></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">KITCHEN ROLL HOLDER</a>
+                  </li>
+                </div>
+                <div class="column">
+                  <li><h4 class="text-h4 font-bold">SEASONAL</h4></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">ADVENT WREATHS</a>
+                  </li>
+                  <li class="text-menuDesktop">
+                    <a href="#">CHRISTMAS TREE</a>
+                  </li>
+                  <li><h4 class="text-h4 font-bold">ART PRINTS</h4></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">FLOWER PRINTS</a>
+                  </li>
+                  <li><h4 class="text-h4 font-bold">WORKSHOP</h4></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">GLAZING WORKSHOP</a>
+                  </li>
+                </div>
+                <div>
+                  <img src="img/navimg.svg" />
+                </div>
               </ul>
             </div>
           </div>
+          <a href="about.html">ABOUT</a>
+        </div>
 
-          <button class="desktop:hidden">
-            <img src="img/burger.png" alt="burger icon" />
-          </button>
+        <div>
+          <div class="container">
+            <div class="header">
+              <div class="cart-button">
+                <button id="open-panel">
+                  <img
+                    class="mr-5 mt-3"
+                    src="img/carticon.png"
+                    alt="Go to cart"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
 
-    <main class="mx-5 pb-20 desktop:pb-48">
+    <main class="pb-20 desktop:mx-5 desktop:pb-48">
       <!-- ------- Breadcrumb ------- -->
-      <section class="flex font-lora" aria-label="Breadcrumb">
+      <section
+        class="flex font-lora text-breadcrumbsMobile desktop:text-breadcrumbsDesktop"
+        aria-label="Breadcrumb"
+      >
         <ol class="md:space-x-3 inline-flex items-center space-x-1">
           <li>
             <div class="flex items-center">
@@ -84,7 +217,7 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              <span>All Products</span>
+              <span>Kitchen</span>
             </div>
           </li>
           <li aria-current="page">
@@ -101,7 +234,7 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              <span>Mugs</span>
+              <span class="text-inactiveCol">Mugs</span>
             </div>
           </li>
         </ol>
@@ -165,7 +298,7 @@
           </div>
 
           <div
-            class="bg-blue-500 col-start-1 col-end-4 grid grid-cols-4 desktop:col-span-9 desktop:col-start-3 desktop:grid-cols-9"
+            class="col-start-1 col-end-4 grid grid-cols-4 gap-5 desktop:col-span-9 desktop:col-start-3 desktop:grid-cols-9"
           >
             <article
               class="col-start-1 col-end-3 desktop:col-start-1 desktop:col-end-4 desktop:w-11/12"
@@ -178,7 +311,7 @@
                   onmouseout="this.src='img/bbrmug1.svg'"
                 />
                 <div
-                  class="absolute top-0 left-0 grid h-[17] w-[85px] place-content-center bg-detailBrand font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-28"
+                  class="absolute top-0 left-0 grid h-[17] w-[85px] place-content-center bg-detailBrand font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-[85px]"
                 >
                   <p>BRAND NEW</p>
                 </div>
@@ -204,7 +337,7 @@
                   onmouseout="this.src='img/fwhakmug1.svg'"
                 />
                 <div
-                  class="absolute top-0 left-0 grid h-[17] w-[85px] place-content-center bg-detailBrand font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-28"
+                  class="absolute top-0 left-0 grid h-[17] w-[85px] place-content-center bg-detailBrand font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-[85px]"
                 >
                   <p>BRAND NEW</p>
                 </div>
@@ -231,7 +364,7 @@
                     onmouseout="this.src='img/flptmug4.svg'"
                   />
                   <div
-                    class="absolute top-4 left-0 grid h-[17] w-[85px] place-content-center bg-successCol font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-28"
+                    class="absolute top-4 left-0 grid h-[17] w-[113px] place-content-center bg-successCol font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-11 desktop:h-5 desktop:w-28"
                   >
                     <p>Collection #9</p>
                   </div>
@@ -257,7 +390,7 @@
                   onmouseout="this.src='img/podmug1.svg'"
                 />
                 <div
-                  class="absolute top-4 left-0 grid h-[17] w-[85px] place-content-center bg-successCol font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-28"
+                  class="absolute top-4 left-0 grid h-[17] w-[113px] place-content-center bg-successCol font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-11 desktop:h-5 desktop:w-28"
                 >
                   <p>Collection #12</p>
                 </div>
@@ -283,7 +416,7 @@
                   onmouseout="this.src='img/ftoylmug1.svg'"
                 />
                 <div
-                  class="absolute top-0 left-0 grid h-[17] w-[85px] place-content-center bg-secondaryCol font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-28"
+                  class="absolute top-0 left-0 grid h-[17] w-[85px] place-content-center bg-secondaryCol font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-[85px]"
                 >
                   <p>SOLD OUT</p>
                 </div>
@@ -309,12 +442,12 @@
                   onmouseout="this.src='img/ltlomug1.svg'"
                 />
                 <div
-                  class="absolute top-0 left-0 grid h-[17] w-[85px] place-content-center bg-secondaryCol font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-28"
+                  class="absolute top-0 left-0 grid h-[17] w-[85px] place-content-center bg-secondaryCol font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-[85px]"
                 >
                   <p>SOLD OUT</p>
                 </div>
                 <div
-                  class="absolute top-4 left-0 grid h-[17] w-[85px] place-content-center bg-successCol font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-28"
+                  class="absolute top-4 left-0 grid h-[17] w-[113px] place-content-center bg-successCol font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-11 desktop:h-5 desktop:w-28"
                 >
                   <p>Collection #12</p>
                 </div>
@@ -328,7 +461,7 @@
               </div>
             </article>
             <div
-              class="scale_mug relative col-start-1 col-end-5 mt-8 text-primaryCol desktop:col-start-1 desktop:col-end-5"
+              class="scale_mug relative col-start-1 col-end-5 mt-8 ml-5 text-primaryCol desktop:col-start-1 desktop:col-end-5"
             >
               <img
                 class="scale_img"
@@ -336,7 +469,7 @@
                 alt="Product image"
               />
               <p
-                class="scale_text absolute top-0 left-0 desktop:h-[324px] desktop:w-[387px]"
+                class="absolute top-0 left-0 desktop:h-[324px] desktop:w-[387px]"
               >
                 If your birthstone is a coffee bean, or you try to find more
                 posi-tea-vity in your life, THIS is for you. We present to you;
@@ -350,7 +483,7 @@
             </div>
 
             <p
-              class="col-start-1 col-end-5 mt-8 text-primaryCol desktop:col-start-5 desktop:col-end-9 desktop:h-[199px] desktop:w-[387px]"
+              class="col-start-1 col-end-5 ml-5 mb-8 text-primaryCol desktop:col-start-5 desktop:col-end-9 desktop:h-[199px] desktop:w-[387px]"
             >
               As all our products these mugs are individually unique, but
               there’s a but. Some of our mugs come within a series, giving you
@@ -370,7 +503,7 @@
                   onmouseout="this.src='img/podmug1.svg'"
                 />
                 <div
-                  class="absolute top-0 left-0 grid h-[17] w-[85px] place-content-center bg-detailBrand font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-28"
+                  class="absolute top-0 left-0 grid h-[17] w-[85px] place-content-center bg-detailBrand font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-[85px]"
                 >
                   <p>BRAND NEW</p>
                 </div>
@@ -396,7 +529,7 @@
                   onmouseout="this.src='img/ftoylmug1.svg'"
                 />
                 <div
-                  class="absolute top-0 left-0 grid h-[17] w-[85px] place-content-center bg-secondaryCol font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-28"
+                  class="absolute top-0 left-0 grid h-[17] w-[85px] place-content-center bg-secondaryCol font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-[85px]"
                 >
                   <p>SOLD OUT</p>
                 </div>
@@ -422,7 +555,7 @@
                   onmouseout="this.src='img/ltlomug1.svg'"
                 />
                 <div
-                  class="absolute top-0 left-0 grid h-[17] w-[85px] place-content-center bg-secondaryCol font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-28"
+                  class="absolute top-0 left-0 grid h-[17] w-[85px] place-content-center bg-secondaryCol font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-[85px]"
                 >
                   <p>SOLD OUT</p>
                 </div>
