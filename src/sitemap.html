@@ -2,185 +2,361 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="img/vildskud_logomark.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Oswald:wght@300;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <meta name="robots" content="noindex" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Vildskud</title>
+    <title>The Clay Play All Products</title>
   </head>
-  <body class="max-w-sm overflow-x-hidden">
-    <!-- *************** Navigation *************** -->
-    <section id="first_section">
-      <div class="banner">
-        <a class="logo" href="index.html"
-          ><img
-            id="logo_big"
-            src="img/vildskud_logomark.svg"
-            alt="Vildskud logo"
+  <body class="bg-mainBrand text-secondaryCol">
+    <!-- ------- Navigation ------- -->
+    <header>
+      <div
+        class="text-white h-6 w-full bg-thirdBrand text-center font-robotoCondensed text-bannerSmall text-mainBrand desktop:text-bannerBig"
+      >
+        <p>FREE DELIVERY FROM DKK 499 WITH SELECTED METHODS</p>
+      </div>
+
+      <div class="cart-panel">
+        <div class="cart-header">
+          <h3
+            class="font-robotoCondensed text-h3Mobile font-bold text-primaryCol desktop:text-h3Desktop"
+          >
+            YOUR CART
+          </h3>
+          <button id="close-panel"><p>X</p></button>
+        </div>
+
+        <div class="cart-content">
+          <div class="products">
+            <p
+              class="mb-10 border-b-[1px] font-lora text-bodySmall font-bold text-primaryCol"
+            >
+              Spend 0 kr more and get free shipping with selected shipping
+              methods
+            </p>
+            <div class="product my-10">
+              <p class="font-lora text-bodySmall">Your cart is empty</p>
+            </div>
+            <div class="grid grid-rows-4">
+              <div class="row-start-5 flex justify-between border-b-[1px]">
+                <p class="font-lora text-body text-primaryCol">Subtotal</p>
+                <div class="flex gap-3 text-primaryCol">
+                  <h4 class="font-robotoCondensed text-h4 font-bold">DKK</h4>
+                  <p class="font-lora text-body">00.00</p>
+                </div>
+              </div>
+              <p class="font-lora text-bodySmall font-bold">Order Note</p>
+              <p class="font-lora text-bodySmall leading-none">
+                Shipping and taxes are calculated at checkout.
+              </p>
+            </div>
+          </div>
+          <div class="flex place-content-center gap-5">
+            <div
+              class="bg-primaryCol py-3 px-6 font-robotoCondensed text-[14px] text-mainBrand"
+            >
+              <button>Keep shopping</button>
+            </div>
+            <div
+              class="border-[1px] bg-mainBrand py-3 px-6 font-robotoCondensed text-[14px] text-primaryCol"
+            >
+              <button>Go to checkout</button>
+            </div>
+          </div>
+          <div>
+            <a class="font-lora text-bodySmall font-bold underline" href="#"
+              >Shipping</a
+            >
+            <a class="font-lora text-bodySmall font-bold underline" href="#"
+              >Go to checkout</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <nav class="navbar">
+        <a href="index.html"
+          ><img class="h-[34px] w-[160px]" src="img/logov2.svg"
         /></a>
-
-        <button class="toggle-btn">☰</button>
-
-        <nav>
-          <ul id="menu">
-            <li><a href="index.html">FORESTILLINGER</a></li>
-            <li><a href="events.html">EVENTS</a></li>
-            <li><a href="program.html">PROGRAM</a></li>
-            <li><a href="om.html">OM VILDSKUD</a></li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-
-    <section class="text-xs ml-8">
-      <div class="text-vildblue underline">
-        <a class="font-montserrat" href="index.html">Forside</a>
-      </div>
-      <div class="text-vildblue underline">
-        <a class="font-montserrat" href="">Hent program</a>
-      </div>
-      <div class="text-vildblue underline">
-        <a class="font-montserrat" href="">Køb billet</a>
-      </div>
-      <p class="font-montserrat" href="">Billetinfo</p>
-      <p class="text-lg">Forestillinger</p>
-      <div class="text-vildblue underline">
-        <a
-          class="font-montserrat"
-          href="what-fires-together-wires-together.html"
-          >What fires together wires together</a
-        >
-      </div>
-      <div class="text-vildblue underline">
-        <a class="font-montserrat" href="go-go-yo-yoku.html">Go Go Yo-Yoku</a>
-      </div>
-      <div class="text-vildblue underline">
-        <a class="font-montserrat" href="det-levende-rum.html"
-          >Det levende rum</a
-        >
-      </div>
-      <div class="text-vildblue underline">
-        <a class="font-montserrat" href="mand-ligger-som-mand-har-redt.html"
-          >Mand ligger som mand har redt</a
-        >
-      </div>
-      <div class="text-vildblue underline">
-        <a class="font-montserrat" href="re-birth.html">Re-birth</a>
-      </div>
-      <div class="text-vildblue underline">
-        <a class="font-montserrat" href="vild-med-mig.html">Vild med mig</a>
-      </div>
-      <div class="text-vildblue underline">
-        <a class="font-montserrat" href="frygten-for-ikke-at-leve.html"
-          >Frygten for ikke at leve</a
-        >
-      </div>
-      <p class="font-montserrat" href="">Købsproces</p>
-      <p class="text-lg">Events</p>
-      <div class="text-vildblue underline">
-        <a class="font-montserrat" href="events.html">Events</a>
-      </div>
-      <div class="text-vildblue underline">
-        <a class="font-montserrat" href="events-tabu.html">Vildskud og Tabu</a>
-      </div>
-      <div class="text-vildblue underline">
-        <a class="font-montserrat" href="events-dramatik.html"
-          >Vildskud og Ny Dansk Dramatik</a
-        >
-      </div>
-      <div class="text-vildblue underline">
-        <a class="font-montserrat" href="events-scenekunst.html"
-          >Vildskud og Fremtidens Scenekunst</a
-        >
-      </div>
-
-      <div class="text-vildblue underline">
-        <a class="font-montserrat" href="program.html">Program</a>
-      </div>
-      <p class="font-montserrat" href="">Program 2022</p>
-      <p class="font-montserrat" href="">Venues</p>
-
-      <div class="text-vildblue underline">
-        <a class="font-montserrat" href="om.html">Om</a>
-      </div>
-      <p class="font-montserrat" href="">Om Vildskud</p>
-      <p class="font-montserrat" href="">Holdet bag</p>
-      <p class="font-montserrat" href="">Samarbejdspartnere</p>
-      <p class="font-montserrat" href="">Bliv frivillig</p>
-
-      <div class="text-vildblue underline">
-        <a class="font-montserrat" href="arkiv.html">Arkiv</a>
-      </div>
-      <p class="font-montserrat" href="">2019</p>
-      <p class="font-montserrat" href="">2020</p>
-      <p class="font-montserrat" href="">2021</p>
-
-      <div class="text-vildblue underline">
-        <a class="font-montserrat" href="privatliv.html">Privatlivspolitik</a>
-      </div>
-      <div class="text-vildblue underline">
-        <a class="font-montserrat" href="cookie.html">Cookiepolitik</a>
-      </div>
-      <div class="text-vildblue underline">
-        <a class="font-montserrat" href="opencall.html">Open call</a>
-      </div>
-      <p class="font-montserrat" href="">Ansøgningsproces</p>
-
-      <div class="text-vildblue underline">
-        <a class="font-montserrat" href="sitemap.html">Sitemap</a>
-      </div>
-    </section>
-
-    <!-- *************** Footer *************** -->
-    <footer class="text-s bg-slate-900 font-light text-white">
-      <div class="flex justify-between">
-        <div class="m-4 leading-7">
-          <a class="font-montserrat underline" href="arkiv.html">Arkiv</a>
-          <br />
-          <a class="font-montserrat underline" href="opencall.html"
-            >Open Call</a
-          >
-          <br />
-          <a class="font-montserrat underline" href="privatliv.html"
-            >Privatlivspolitik</a
-          >
-          <br />
-          <a class="font-montserrat underline" href="cookie.html"
-            >Cookiepolitik</a
-          >
-          <br />
-          <a class="font-montserrat underline" href="sitemap.html">Sitemap</a>
-        </div>
-        <div class="m-4 mt-10">
-          <div class="w-18 pl-6">
-            <a href="mailto:info@vildskud.dk"><img src="img/mail.svg" /> </a>
-          </div>
-          <div class="flex">
-            <div class="p-3">
-              <a
-                href="https://www.instagram.com/vildskudfestival/"
-                target="_blank"
-                ><img src="img/instagram.svg" />
-              </a>
+        <div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              WEBSHOP
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div
+              class="dropdown-content font-robotoCondensed leading-none text-primaryCol"
+            >
+              <div class="header">
+                <h4 class="font-robotoCondensed text-h4 font-bold">
+                  ALL PRODUCTS
+                </h4>
+              </div>
+              <ul class="row">
+                <div class="column">
+                  <li><h4 class="text-h4 font-bold">INTERIOR</h4></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">CANDLEHOLDERS</a>
+                  </li>
+                  <li class="text-menuDesktop"><a href="#">LAMP SHADES</a></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">WALL DECORATION</a>
+                  </li>
+                  <li class="text-menuDesktop">
+                    <a href="#">CERAMIC CANDLES</a>
+                  </li>
+                  <li class="text-menuDesktop">
+                    <a href="category-empty.html">BOWLS</a>
+                  </li>
+                  <li class="text-menuDesktop"><a href="#">VASES</a></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">CERAMIC ANIMALS</a>
+                  </li>
+                  <li class="text-menuDesktop"><a href="#">PLANTERS</a></li>
+                </div>
+                <div class="column">
+                  <li><h4 class="text-h4 font-bold">FLAGS</h4></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">DANNEBROG FLAG</a>
+                  </li>
+                  <li class="text-menuDesktop"><a href="#">CLOWN FLAG</a></li>
+                  <li class="text-menuDesktop"><a href="#">NAME FLAG</a></li>
+                  <li class="text-menuDesktop"><a href="#">RAINBOW FLAG</a></li>
+                  <li class="text-menuDesktop"><a href="#">WORLS FLAG</a></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">HARLEQUIN FLAG</a>
+                  </li>
+                </div>
+                <div class="column">
+                  <li><h4 class="text-h4 font-bold">KITCHEN</h4></li>
+                  <li class="text-menuDesktop">
+                    <a href="category-mugs.html">MUGS</a>
+                  </li>
+                  <li class="text-menuDesktop">
+                    <a href="#">COFFEE DRIPPERS</a>
+                  </li>
+                  <li class="text-menuDesktop"><a href="#">WINE CUPS</a></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">KITCHEN ROLL HOLDER</a>
+                  </li>
+                </div>
+                <div class="column">
+                  <li><h4 class="text-h4 font-bold">SEASONAL</h4></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">ADVENT WREATHS</a>
+                  </li>
+                  <li class="text-menuDesktop">
+                    <a href="#">CHRISTMAS TREE</a>
+                  </li>
+                  <li><h4 class="text-h4 font-bold">ART PRINTS</h4></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">FLOWER PRINTS</a>
+                  </li>
+                  <li><h4 class="text-h4 font-bold">WORKSHOP</h4></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">GLAZING WORKSHOP</a>
+                  </li>
+                </div>
+                <div>
+                  <img src="img/navimg.svg" />
+                </div>
+              </ul>
             </div>
-            <div class="p-3">
-              <a
-                href="https://www.facebook.com/vildskudfestival/"
-                target="_blank"
-                ><img src="img/facebook.svg" />
-              </a>
+          </div>
+          <a href="about.html">ABOUT</a>
+        </div>
+
+        <div>
+          <div class="container">
+            <div class="header">
+              <div class="cart-button">
+                <button id="open-panel">
+                  <img
+                    class="mr-5 mt-3"
+                    src="img/carticon.png"
+                    alt="Go to cart"
+                  />
+                </button>
+              </div>
             </div>
           </div>
         </div>
+      </nav>
+    </header>
+
+    <section class="ml-8 flex justify-evenly">
+      <div>
+        <div class="underline">
+          <a class="font-lora text-body" href="index.html">Landing page</a>
+        </div>
+        <div class="underline">
+          <a class="font-lora text-body" href="about.html">About</a>
+        </div>
+        <div class="underline">
+          <a class="font-lora text-body" href="category-mugs.html">Mugs</a>
+        </div>
+        <div class="underline">
+          <a class="font-lora text-body" href="singleview-mugs.html"
+            >Felt like pink today</a
+          >
+        </div>
+        <div class="underline">
+          <a class="font-lora text-body" href="category-flags.html">Flags</a>
+        </div>
+        <div class="underline">
+          <a class="font-lora text-body" href="singleview-flags.html"
+            >Birthday edition</a
+          >
+        </div>
       </div>
-      <p class="text-xs pb-4 text-center opacity-80">
-        &copy; Copyright Vildskud festival
-      </p>
+
+      <div>
+        <div class="underline">
+          <a class="font-lora text-body" href="category-wreaths.html"
+            >Wreaths</a
+          >
+        </div>
+        <div class="underline">
+          <a class="font-lora text-body" href="singleview-wreaths.html"
+            >Santa's lipgloss</a
+          >
+        </div>
+        <div class="underline">
+          <a class="font-lora text-body" href="category-empty.html">Bowls</a>
+        </div>
+
+        <div class="underline">
+          <a class="font-lora text-body" href="payflow.html">Cart</a>
+        </div>
+
+        <div class="underline">
+          <a class="font-lora text-body" href="purchase.html">Confirmation</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div
+        class="bg-thirdBrand py-5 px-5 text-mainBrand desktop:flex desktop:justify-between desktop:px-10"
+      >
+        <div>
+          <div class="pb-2">
+            <a class="font-robotoCondensed text-footer font-bold" href="#"
+              >ABOUT</a
+            >
+            <br />
+          </div>
+
+          <a class="font-robotoCondensed text-footer font-bold" href="#"
+            >TERMS</a
+          >
+
+          <div class="pl-5 pb-2 font-robotoCondensed text-footer desktop:pl-8">
+            <a href="#"
+              ><span class="italic text-detailBrand">Mmmm, cookies</span> -
+              Cookies policy</a
+            >
+            <br />
+            <a href="#"
+              ><span class="italic text-detailBrand"
+                >W've got your privacy</span
+              >
+              - Privacy policy</a
+            >
+            <br />
+            <a href="#"
+              ><span class="italic text-detailBrand">What goes around</span> -
+              Return policy</a
+            >
+            <br />
+            <a href="#"
+              ><span class="italic text-detailBrand">And then she asked..</span>
+              - FAQ's</a
+            >
+          </div>
+          <div class="pb-2">
+            <a class="font-robotoCondensed text-footer font-bold" href="#"
+              >CONTACT US</a
+            >
+            <br />
+          </div>
+          <div class="pb-10">
+            <a class="font-robotoCondensed text-footer font-bold" href="#"
+              >SITEMAP</a
+            >
+          </div>
+          <div class="flex h-[25px] w-[25] gap-5">
+            <img src="img/instagram.png" alt="Instagram icon" />
+            <img src="img/facebook.png" alt="Facebook icon" />
+            <img src="img/pinterest.png" alt="Pinterest icon" />
+          </div>
+        </div>
+        <div class="relative hidden desktop:block desktop:w-1/4">
+          <p
+            class="font-robotoCondensed text-[18px] desktop:absolute desktop:bottom-0"
+          >
+            &#169; Copyright - The Clay Play 2022
+          </p>
+        </div>
+        <div>
+          <h3
+            class="pt-10 font-robotoCondensed text-h3Mobile font-bold desktop:text-h3Desktop"
+          >
+            NEWSLETTER
+          </h3>
+          <p class="pb-4 font-lora text-footer">
+            Sign up and get the hottes clay news
+          </p>
+          <form
+            class="flex desktop:mt-4 desktop:mb-10 desktop:h-[45px] desktop:w-[340px]"
+          >
+            <input
+              class="w-[340px] border-[1px] bg-thirdBrand"
+              id="email"
+              name="email"
+              placeholder="Enter your email here"
+            />
+            <a
+              href="#"
+              class="bg-mainBrand px-8 py-2 text-center text-footer text-primaryCol"
+            >
+              APPLY
+            </a>
+          </form>
+          <div class="border-white mt-16 border-t-[1px]">
+            <h3
+              class="block pb-2 font-robotoCondensed text-h3Mobile font-bold desktop:hidden desktop:text-h3Desktop"
+            >
+              THE CLAY PLAY <br />
+              SHOP, ATELIER & <br />
+              WORKSHOP
+            </h3>
+
+            <h3
+              class="hidden font-robotoCondensed text-h3Mobile font-bold desktop:block desktop:text-h3Desktop"
+            >
+              THE CLAY PLAY <br />
+              SHOP, ATELIER & WORKSHOP
+            </h3>
+          </div>
+          <address class="font-lora text-footer">
+            Agtoftsvej 7 C <br />
+            6400 Sønderborg <br />Denmark <br />
+            <br />Tlf. +45 22 50 24 66 <br />
+            CVR/VAT: DK30618025
+          </address>
+          <p
+            class="block pt-5 text-center font-robotoCondensed text-[18px] desktop:absolute desktop:bottom-0 desktop:hidden"
+          >
+            &#169; Copyright - The Clay Play 2022
+          </p>
+        </div>
+      </div>
     </footer>
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="main.js"></script>
+    <script type="module" src="login.js"></script>
   </body>
 </html>

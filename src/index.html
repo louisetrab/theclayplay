@@ -31,51 +31,21 @@
 
         <div class="cart-content">
           <div class="products">
-            <p class="border-b-[1px] text-primaryCol">
+            <p
+              class="mb-10 border-b-[1px] font-lora text-bodySmall font-bold text-primaryCol"
+            >
               Spend 0 kr more and get free shipping with selected shipping
               methods
             </p>
-            <div class="product border-b-[1px]">
-              <img width="80" src="img/flptmug1.svg" alt="Product image" />
-              <div>
-                <h4
-                  class="font-robotoCondensed text-h4 font-bold text-primaryCol"
-                >
-                  FELT LIKE PINK TODAY
-                </h4>
-                <div class="flex font-lora text-body text-primaryCol">
-                  <p>No.</p>
-                  <p>E9-11</p>
-                </div>
-                <p class="font-lora text-body text-primaryCol">1 item</p>
-                <div
-                  class="flex font-robotoCondensed text-h4 font-bold text-primaryCol"
-                >
-                  <h4>480,00</h4>
-                  <h4>DKK</h4>
-                </div>
-                <div class="grid place-content-end">
-                  <img src="img/trash_icon.svg" alt="Delete" />
-                </div>
-              </div>
+            <div class="product my-10">
+              <p class="font-lora text-bodySmall">Your cart is empty</p>
             </div>
             <div class="grid grid-rows-4">
-              <div class="row-start-4 flex justify-between">
-                <p class="font-lora text-bodySmall text-primaryCol">
-                  Gift wrapping
-                </p>
-                <div class="flex text-primaryCol">
-                  <h4 class="font-robotoCondensed text-h4 font-bold">DKK</h4>
-                  <p class="font-lora text-bodySmall">29.00</p>
-                </div>
-              </div>
               <div class="row-start-5 flex justify-between border-b-[1px]">
-                <p class="font-lora text-bodySmall text-primaryCol">
-                  Gift wrapping
-                </p>
-                <div class="flex text-primaryCol">
+                <p class="font-lora text-body text-primaryCol">Subtotal</p>
+                <div class="flex gap-3 text-primaryCol">
                   <h4 class="font-robotoCondensed text-h4 font-bold">DKK</h4>
-                  <p class="font-lora text-bodySmall">29.00</p>
+                  <p class="font-lora text-body">00.00</p>
                 </div>
               </div>
               <p class="font-lora text-bodySmall font-bold">Order Note</p>
@@ -138,7 +108,9 @@
                   <li class="text-menuDesktop">
                     <a href="#">CERAMIC CANDLES</a>
                   </li>
-                  <li class="text-menuDesktop"><a href="#">BOWLS</a></li>
+                  <li class="text-menuDesktop">
+                    <a href="category-empty.html">BOWLS</a>
+                  </li>
                   <li class="text-menuDesktop"><a href="#">VASES</a></li>
                   <li class="text-menuDesktop">
                     <a href="#">CERAMIC ANIMALS</a>
@@ -314,7 +286,9 @@
                 <a href="#">World Flag</a>
               </li>
               <li class="font-bold">INTERIOR</li>
-              <li class="hover:font-bold"><a href="#">Bowls</a></li>
+              <li class="hover:font-bold">
+                <a href="category-empty.html">Bowls</a>
+              </li>
               <li class="hover:font-bold"><a href="#">Candleholders</a></li>
               <li class="hover:font-bold"><a href="#">Ceramic animals</a></li>
               <li class="hover:font-bold"><a href="#">Ceramic candles</a></li>
@@ -330,7 +304,7 @@
                 <a href="#">Kitchen roll holders</a>
               </li>
               <li class="hover:font-bold">
-                <a href="singleview-mugs.html">Mugs</a>
+                <a href="category-mugs.html">Mugs</a>
               </li>
               <li class="pb-[31px] hover:font-bold">
                 <a href="#">Wine mugs</a>
@@ -357,7 +331,7 @@
                     onmouseout="this.src='img/bbrmug1.svg'"
                   />
                   <div
-                    class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-detailBrand text-mainBrand"
+                    class="absolute top-0 left-0 grid h-[17] w-[85px] place-content-center bg-detailBrand font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-28"
                   >
                     <p>BRAND NEW</p>
                   </div>
@@ -374,54 +348,60 @@
               <article
                 class="col-start-3 col-end-5 block desktop:col-start-1 desktop:col-end-4 desktop:mr-6 desktop:hidden"
               >
-                <div class="relative">
-                  <img
-                    class="w-full border-t-[1px] border-l-[1px] border-r-[1px]"
-                    src="img/bdflag1.svg"
-                    alt="fødselsdagsflag birthday flag"
-                    onmouseover="this.src='img/bdflag2.svg'"
-                    onmouseout="this.src='img/bdflag1.svg'"
-                  />
-                  <div
-                    class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-detailBrand text-mainBrand"
-                  >
-                    <p>BRAND NEW</p>
+                <a href="singleview-flags.html">
+                  <div class="relative">
+                    <a href="singleview-flags.html">
+                      <img
+                        class="w-full border-t-[1px] border-l-[1px] border-r-[1px]"
+                        src="img/bdflag1.svg"
+                        alt="fødselsdagsflag birthday flag"
+                        onmouseover="this.src='img/bdflag2.svg'"
+                        onmouseout="this.src='img/bdflag1.svg'"
+                    /></a>
+
+                    <div
+                      class="absolute top-0 left-0 grid h-[17] w-[85px] place-content-center bg-detailBrand font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-28"
+                    >
+                      <p>BRAND NEW</p>
+                    </div>
                   </div>
-                </div>
-                <div
-                  class="grid h-24 place-content-center bg-primaryBrand text-center"
+                  <div
+                    class="grid h-24 place-content-center bg-primaryBrand text-center"
+                  >
+                    <h5 class="font-bold">DANNAEBROG FLAG</h5>
+                    <h5 class="italic">Birthday edition</h5>
+                    <p class="font-bold">DKK 395,00</p>
+                  </div></a
                 >
-                  <h5 class="font-bold">DANNAEBROG FLAG</h5>
-                  <h5 class="italic">Birthday edition</h5>
-                  <p class="font-bold">DKK 395,00</p>
-                </div>
               </article>
 
               <article
                 class="col-start-3 col-end-5 mr-6 hidden desktop:col-start-4 desktop:col-end-10 desktop:row-span-2 desktop:block"
               >
-                <div class="relative">
-                  <img
-                    class="desktop:h-fill w-full border-t-[1px] border-l-[1px] border-r-[1px] desktop:object-cover"
-                    src="img/bdflag1.svg"
-                    alt="fødselsdagsflag birthday flag"
-                    onmouseover="this.src='img/bdflag2.svg'"
-                    onmouseout="this.src='img/bdflag1.svg'"
-                  />
-                  <div
-                    class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-detailBrand text-mainBrand"
-                  >
-                    <p>BRAND NEW</p>
+                <a href="singleview-flags.html">
+                  <div class="relative">
+                    <img
+                      class="desktop:h-fill w-full border-t-[1px] border-l-[1px] border-r-[1px] desktop:object-cover"
+                      src="img/bdflag1.svg"
+                      alt="fødselsdagsflag birthday flag"
+                      onmouseover="this.src='img/bdflag2.svg'"
+                      onmouseout="this.src='img/bdflag1.svg'"
+                    />
+                    <div
+                      class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-detailBrand text-mainBrand"
+                    >
+                      <p>BRAND NEW</p>
+                    </div>
                   </div>
-                </div>
 
-                <div
-                  class="grid h-24 w-full place-content-center bg-primaryBrand text-center desktop:h-44"
+                  <div
+                    class="grid h-24 w-full place-content-center bg-primaryBrand text-center desktop:h-44"
+                  >
+                    <h5 class="font-bold">DANNEBROG FLAG</h5>
+                    <h5 class="italic">Birthday edition</h5>
+                    <p class="font-bold">DKK 395,00</p>
+                  </div></a
                 >
-                  <h5 class="font-bold">DANNEBROG FLAG</h5>
-                  <h5 class="italic">Birthday edition</h5>
-                  <p class="font-bold">DKK 395,00</p>
-                </div>
               </article>
 
               <article
@@ -465,7 +445,7 @@
                     onmouseout="this.src='img/ssbcandleholder1.svg'"
                   />
                   <div
-                    class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-detailBrand text-mainBrand"
+                    class="absolute top-0 left-0 grid h-[17] w-[85px] place-content-center bg-detailBrand font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-28"
                   >
                     <p>BRAND NEW</p>
                   </div>
@@ -491,7 +471,7 @@
                     onmouseout="this.src='img/bbcandleholder1.svg'"
                   />
                   <div
-                    class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-detailBrand text-mainBrand"
+                    class="absolute top-0 left-0 grid h-[17] w-[85px] place-content-center bg-detailBrand font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-28"
                   >
                     <p>BRAND NEW</p>
                   </div>
@@ -517,7 +497,7 @@
                     onmouseout="this.src='img/ssbcandleholder1.svg'"
                   />
                   <div
-                    class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-detailBrand text-mainBrand"
+                    class="absolute top-0 left-0 grid h-[17] w-[85px] place-content-center bg-detailBrand font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-28"
                   >
                     <p>BRAND NEW</p>
                   </div>
@@ -543,7 +523,7 @@
                     onmouseout="this.src='img/cemug1.svg'"
                   />
                   <div
-                    class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-detailBrand text-mainBrand"
+                    class="absolute top-0 left-0 grid h-[17] w-[85px] place-content-center bg-detailBrand font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-28"
                   >
                     <p>BRAND NEW</p>
                   </div>
@@ -560,20 +540,22 @@
               <article
                 class="col-start-1 col-end-3 desktop:col-start-1 desktop:col-end-4 desktop:w-11/12"
               >
-                <img
-                  class="w-full border-t-[1px] border-l-[1px] border-r-[1px]"
-                  src="img/slgwreath1.svg"
-                  alt="Product image"
-                  onmouseover="this.src='img/slgwreath2.svg'"
-                  onmouseout="this.src='img/slgwreath1.svg'"
-                />
-                <div
-                  class="grid h-24 place-content-center bg-primaryBrand text-center"
+                <a href="singleview-wreaths.html">
+                  <img
+                    class="w-full border-t-[1px] border-l-[1px] border-r-[1px]"
+                    src="img/slgwreath1.svg"
+                    alt="Product image"
+                    onmouseover="this.src='img/slgwreath2.svg'"
+                    onmouseout="this.src='img/slgwreath1.svg'"
+                  />
+                  <div
+                    class="grid h-24 place-content-center bg-primaryBrand text-center"
+                  >
+                    <h5 class="font-bold">ADVENT WREATHS</h5>
+                    <h5 class="italic">Santa's lipgloss</h5>
+                    <p class="font-bold">DKK 1200,00</p>
+                  </div></a
                 >
-                  <h5 class="font-bold">ADVENT WREATHS</h5>
-                  <h5 class="italic">Santa's lipgloss</h5>
-                  <p class="font-bold">DKK 1200,00</p>
-                </div>
               </article>
 
               <article
@@ -588,7 +570,7 @@
                     onmouseout="this.src='img/dhfxtree1.svg'"
                   />
                   <div
-                    class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-secondaryCol text-mainBrand"
+                    class="absolute top-0 left-0 grid h-[17] w-[85px] place-content-center bg-secondaryCol font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-28"
                   >
                     <p>SOLD OUT</p>
                   </div>
@@ -614,7 +596,7 @@
                     onmouseout="this.src='img/podmug1.svg'"
                   />
                   <div
-                    class="absolute top-11 left-0 grid h-5 w-32 place-content-center bg-successCol text-mainBrand"
+                    class="absolute top-4 left-0 grid h-[17] w-[113px] place-content-center bg-successCol font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-28"
                   >
                     <p>COLLECTION #12</p>
                   </div>
@@ -661,12 +643,12 @@
                     onmouseout="this.src='img/hotmdholder.svg'"
                   />
                   <div
-                    class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-detailBrand text-mainBrand"
+                    class="absolute top-0 left-0 grid h-[17] w-[85px] place-content-center bg-detailBrand font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-28"
                   >
                     <p>BRAND NEW</p>
                   </div>
                   <div
-                    class="absolute top-11 left-0 grid h-5 w-32 place-content-center bg-successCol text-mainBrand"
+                    class="absolute top-4 left-0 grid h-[17] w-[113px] place-content-center bg-successCol font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-28"
                   >
                     <p>Collection #2</p>
                   </div>
@@ -778,7 +760,7 @@
                     onmouseout="this.src='img/tiimatpanimal1.svg'"
                   />
                   <div
-                    class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-secondaryCol text-mainBrand"
+                    class="absolute top-0 left-0 grid h-[17] w-[85px] place-content-center bg-secondaryCol font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-28"
                   >
                     <p>SOLD OUT</p>
                   </div>
@@ -804,7 +786,7 @@
                     onmouseout="this.src='img/ftoylmug1.svg'"
                   />
                   <div
-                    class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-secondaryCol text-mainBrand"
+                    class="absolute top-0 left-0 grid h-[17] w-[85px] place-content-center bg-secondaryCol font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-28"
                   >
                     <p>SOLD OUT</p>
                   </div>
@@ -828,7 +810,7 @@
                     alt="Product image"
                   />
                   <div
-                    class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-secondaryCol text-mainBrand"
+                    class="absolute top-0 left-0 grid h-[17] w-[85px] place-content-center bg-secondaryCol font-robotoCondensed text-bannerSmall font-bold text-mainBrand desktop:top-6 desktop:h-5 desktop:w-28"
                   >
                     <p>SOLD OUT</p>
                   </div>
@@ -902,7 +884,9 @@
             <br />
           </div>
           <div class="pb-10">
-            <a class="font-robotoCondensed text-footer font-bold" href="#"
+            <a
+              class="font-robotoCondensed text-footer font-bold"
+              href="sitemap.html"
               >SITEMAP</a
             >
           </div>

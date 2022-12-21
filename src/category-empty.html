@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Birthday Edition</title>
+  </head>
+  <body class="bg-mainBrand text-primaryCol">
+    <!-- ------- Navigation ------- -->
+    <header>
+      <div
+        class="text-white h-6 w-full bg-thirdBrand text-center font-robotoCondensed text-bannerSmall text-mainBrand desktop:text-bannerBig"
+      >
+        <p>FREE DELIVERY FROM DKK 499 WITH SELECTED METHODS</p>
+      </div>
+
+      <div class="cart-panel">
+        <div class="cart-header">
+          <h3
+            class="font-robotoCondensed text-h3Mobile font-bold text-primaryCol desktop:text-h3Desktop"
+          >
+            YOUR CART
+          </h3>
+          <button id="close-panel"><p>X</p></button>
+        </div>
+
+        <div class="cart-content">
+          <div class="products">
+            <p
+              class="mb-10 border-b-[1px] font-lora text-bodySmall font-bold text-primaryCol"
+            >
+              Spend 0 kr more and get free shipping with selected shipping
+              methods
+            </p>
+            <div class="product border-b-[1px]">
+              <img width="80" src="img/flptmug1.svg" alt="Product image" />
+              <div>
+                <h4
+                  class="font-robotoCondensed text-h4 font-bold text-primaryCol"
+                >
+                  BIRTHDAY EDITION
+                </h4>
+                <div class="flex font-lora text-body text-primaryCol">
+                  <p>No.</p>
+                  <p>E9-11</p>
+                </div>
+                <p class="font-lora text-body text-primaryCol">1 item</p>
+                <div
+                  class="flex gap-10 font-robotoCondensed text-h4 font-bold text-primaryCol"
+                >
+                  <h4>480,00</h4>
+                  <h4>DKK</h4>
+                </div>
+                <div class="grid place-content-end">
+                  <img src="img/trash_icon.svg" alt="Delete" />
+                </div>
+              </div>
+            </div>
+            <div class="grid grid-rows-4">
+              <div class="row-start-4 flex justify-between">
+                <p class="font-lora text-bodySmall text-primaryCol">
+                  Gift wrapping
+                </p>
+                <div class="flex gap-10 text-primaryCol">
+                  <h4 class="font-robotoCondensed text-h4 font-bold">DKK</h4>
+                  <p class="font-lora text-bodySmall">29.00</p>
+                </div>
+              </div>
+              <div class="row-start-5 flex justify-between border-b-[1px]">
+                <p class="font-lora text-body text-primaryCol">Subtotal</p>
+                <div class="flex gap-3 text-primaryCol">
+                  <h4 class="font-robotoCondensed text-h4 font-bold">DKK</h4>
+                  <p class="font-lora text-body">509.00</p>
+                </div>
+              </div>
+              <p class="font-lora text-bodySmall font-bold">Order Note</p>
+              <p class="font-lora text-bodySmall leading-none">
+                Shipping and taxes are calculated at checkout.
+              </p>
+            </div>
+          </div>
+          <div class="flex place-content-center gap-5">
+            <div
+              class="bg-primaryCol py-3 px-6 font-robotoCondensed text-[14px] text-mainBrand"
+            >
+              <button id="closecheck">Keep shopping</button>
+            </div>
+            <div
+              class="border-[1px] bg-mainBrand py-3 px-6 font-robotoCondensed text-[14px] text-primaryCol"
+            >
+              <button>Go to checkout</button>
+            </div>
+          </div>
+          <div>
+            <a class="font-lora text-bodySmall font-bold underline" href="#"
+              >Shipping</a
+            >
+            <a class="font-lora text-bodySmall font-bold underline" href="#"
+              >Go to checkout</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <nav class="navbar">
+        <a href="index.html"
+          ><img class="h-[34px] w-[160px]" src="img/logov2.svg"
+        /></a>
+        <div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              WEBSHOP
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div
+              class="dropdown-content font-robotoCondensed leading-none text-primaryCol"
+            >
+              <div class="header">
+                <h4 class="font-robotoCondensed text-h4 font-bold">
+                  ALL PRODUCTS
+                </h4>
+              </div>
+              <ul class="row">
+                <div class="column">
+                  <li><h4 class="text-h4 font-bold">INTERIOR</h4></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">CANDLEHOLDERS</a>
+                  </li>
+                  <li class="text-menuDesktop"><a href="#">LAMP SHADES</a></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">WALL DECORATION</a>
+                  </li>
+                  <li class="text-menuDesktop">
+                    <a href="#">CERAMIC CANDLES</a>
+                  </li>
+                  <li class="text-menuDesktop"><a href="#">BOWLS</a></li>
+                  <li class="text-menuDesktop"><a href="#">VASES</a></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">CERAMIC ANIMALS</a>
+                  </li>
+                  <li class="text-menuDesktop"><a href="#">PLANTERS</a></li>
+                </div>
+                <div class="column">
+                  <li><h4 class="text-h4 font-bold">FLAGS</h4></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">DANNEBROG FLAG</a>
+                  </li>
+                  <li class="text-menuDesktop"><a href="#">CLOWN FLAG</a></li>
+                  <li class="text-menuDesktop"><a href="#">NAME FLAG</a></li>
+                  <li class="text-menuDesktop"><a href="#">RAINBOW FLAG</a></li>
+                  <li class="text-menuDesktop"><a href="#">WORLS FLAG</a></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">HARLEQUIN FLAG</a>
+                  </li>
+                </div>
+                <div class="column">
+                  <li><h4 class="text-h4 font-bold">KITCHEN</h4></li>
+                  <li class="text-menuDesktop">
+                    <a href="category-mugs.html">MUGS</a>
+                  </li>
+                  <li class="text-menuDesktop">
+                    <a href="#">COFFEE DRIPPERS</a>
+                  </li>
+                  <li class="text-menuDesktop"><a href="#">WINE CUPS</a></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">KITCHEN ROLL HOLDER</a>
+                  </li>
+                </div>
+                <div class="column">
+                  <li><h4 class="text-h4 font-bold">SEASONAL</h4></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">ADVENT WREATHS</a>
+                  </li>
+                  <li class="text-menuDesktop">
+                    <a href="#">CHRISTMAS TREE</a>
+                  </li>
+                  <li><h4 class="text-h4 font-bold">ART PRINTS</h4></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">FLOWER PRINTS</a>
+                  </li>
+                  <li><h4 class="text-h4 font-bold">WORKSHOP</h4></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">GLAZING WORKSHOP</a>
+                  </li>
+                </div>
+                <div>
+                  <img src="img/navimg.svg" />
+                </div>
+              </ul>
+            </div>
+          </div>
+          <a href="about.html">ABOUT</a>
+        </div>
+
+        <div>
+          <div class="container">
+            <div class="header">
+              <div class="cart-button">
+                <button id="open-panel">
+                  <img
+                    class="mr-5 mt-3"
+                    src="img/carticon.png"
+                    alt="Go to cart"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="pb-20 desktop:pb-48">
+      <!-- ------- Breadcrumb ------- -->
+      <section class="flex font-lora" aria-label="Breadcrumb">
+        <ol class="md:space-x-3 inline-flex items-center space-x-1">
+          <li>
+            <div class="flex items-center">
+              <a
+                href="#"
+                class="md:ml-2 text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white text-sm font-medium ml-1"
+                >Webshop</a
+              >
+            </div>
+          </li>
+          <li aria-current="page">
+            <div class="flex items-center">
+              <svg
+                class="text-gray-400 h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span>Interior</span>
+            </div>
+          </li>
+          <li aria-current="page">
+            <div class="flex items-center">
+              <svg
+                class="text-gray-400 h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span class="text-inactiveCol">Bowls</span>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ------- Product header ------- -->
+      <section class="mx-5 desktop:grid desktop:grid-cols-12">
+        <div class="w-[390px] desktop:col-start-4 desktop:col-end-9">
+          <h2
+            class="ml-5 mt-16 mb-10 font-robotoCondensed text-h2Mobile font-bold desktop:text-h2Desktop"
+          >
+            BOWLS
+          </h2>
+          <div>
+            <h2
+              class="font-robotoCondensed text-h2Mobile font-bold text-detailBrand desktop:text-h2Desktop"
+            >
+              OH, WE REALLY HOPED <br />YOU W0ULDN'T NOTICE
+            </h2>
+            <div class="text-h5 italic">
+              <h5 class="pb-10 pt-1">
+                There's nothing here. We've got our hands stuck in the clay
+                making new items for you.
+              </h5>
+              <h5>
+                Sign up for our newsletter, and get notice when it's fresh out
+                the oven.
+              </h5>
+            </div>
+            <form class="mb-10 mt-4 flex h-[45px] w-[340px] desktop:mb-20">
+              <input
+                class="w-[340px] border-[1px] bg-mainBrand"
+                id="email"
+                name="email"
+                placeholder="Enter your email here"
+              />
+              <button
+                href="#"
+                class="bg-primaryCol px-8 py-2 text-center text-footer text-mainBrand"
+              >
+                APPLY
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-5">
+        <div class="w-full desktop:h-96">
+          <h3
+            class="pb-4 font-robotoCondensed text-h3Mobile font-bold desktop:text-h3Desktop"
+          >
+            PRODUCTS YOU MAY ALSO LIKE...
+          </h3>
+
+          <div
+            class="hidden place-content-center font-robotoCondensed desktop:flex desktop:gap-5"
+          >
+            <article>
+              <div class="relative">
+                <img
+                  class="border-t-[1px] border-l-[1px] border-r-[1px]"
+                  src="img/bbcandleholder1.svg"
+                  onmouseover="this.src='img/bbcandleholder2.svg'"
+                  onmouseout="this.src='img/bbcandleholder1.svg'"
+                  alt="Blue bird candleholder"
+                />
+                <div
+                  class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-detailBrand text-mainBrand"
+                >
+                  <p>BRAND NEW</p>
+                </div>
+                <div
+                  class="absolute top-11 left-0 grid h-5 w-32 place-content-center bg-successCol text-mainBrand"
+                >
+                  <p>Collection #19</p>
+                </div>
+              </div>
+              <div
+                class="border-black grid h-24 place-content-center border-b-[1px] border-l-[1px] border-r-[1px] bg-primaryBrand text-center"
+              >
+                <h5 class="text-h5 font-bold">CANDLEHOLDERS</h5>
+                <p class="italic">Bluebird</p>
+                <h5 class="text-h5 font-bold">DKK 220,00</h5>
+              </div>
+            </article>
+            <article>
+              <img
+                class="border-t-[1px] border-l-[1px] border-r-[1px]"
+                src="img/ddwinemug1.svg"
+                onmouseover="this.src='img/ddwinemug2.svg'"
+                onmouseout="this.src='img/ddwinemug1.svg'"
+                alt="Daydrinking winemug"
+              />
+              <div
+                class="border-black grid h-24 place-content-center border-b-[1px] border-l-[1px] border-r-[1px] bg-primaryBrand"
+              >
+                <h5 class="font-bold">WINEMUGS</h5>
+                <p class="italic">Daydrinking</p>
+                <h5 class="font-bold">DKK 580,00</h5>
+              </div>
+            </article>
+            <article>
+              <div class="holder_box relative">
+                <img
+                  class="holder_img border-t-[1px] border-l-[1px] border-r-[1px]"
+                  src="img/hotmdholder.svg"
+                  alt="Blue bird candleholder"
+                />
+                <div
+                  class="absolute top-6 left-0 grid h-5 w-28 place-content-center bg-detailBrand text-mainBrand"
+                >
+                  <p>BRAND NEW</p>
+                </div>
+                <div
+                  class="absolute top-11 left-0 grid h-5 w-32 place-content-center bg-successCol text-mainBrand"
+                >
+                  <p>Collection #19</p>
+                </div>
+              </div>
+              <div
+                class="border-black grid h-24 place-content-center border-b-[1px] border-l-[1px] border-r-[1px] bg-primaryBrand text-center"
+              >
+                <h5 class="font-bold">KITCHEN ROLL HOLDER</h5>
+                <p class="italic">Hold on to me dearly</p>
+                <h5 class="font-bold">DKK 695,00</h5>
+              </div>
+            </article>
+            <article>
+              <img
+                class="border-t-[1px] border-l-[1px] border-r-[1px]"
+                src="img/cclampshade1.svg"
+                onmouseover="this.src='img/cclampshade2.svg'"
+                onmouseout="this.src='img/cclampshade1.svg'"
+                alt="Cucumber cute lampshade"
+              />
+              <div
+                class="border-black grid h-24 place-content-center border-b-[1px] border-l-[1px] border-r-[1px] bg-primaryBrand text-center"
+              >
+                <h5 class="font-bold">LAMPSHADE</h5>
+                <p class="italic">Cucumber cute</p>
+                <h5 class="font-bold">DKK 695,00</h5>
+              </div>
+            </article>
+          </div>
+
+          <div class="carousel desktop:hidden">
+            <img src="img/bbcandleholder1.svg" alt="image 1" />
+            <img src="img/ddwinemug1.svg" alt="image 2" />
+            <img src="img/cclampshade1.svg" alt="image 3" />
+            <img src="img/bbcandleholder1.svg" alt="image 1" />
+            <img src="img/ddwinemug1.svg" alt="image 2" />
+            <img src="img/cclampshade1.svg" alt="image 3" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div
+        class="bg-thirdBrand py-5 px-5 text-mainBrand desktop:flex desktop:justify-between desktop:px-10"
+      >
+        <div>
+          <div class="pb-2">
+            <a class="font-robotoCondensed text-footer font-bold" href="#"
+              >ABOUT</a
+            >
+            <br />
+          </div>
+
+          <a class="font-robotoCondensed text-footer font-bold" href="#"
+            >TERMS</a
+          >
+
+          <div class="pl-5 pb-2 font-robotoCondensed text-footer desktop:pl-8">
+            <a href="#"
+              ><span class="italic text-detailBrand">Mmmm, cookies</span> -
+              Cookies policy</a
+            >
+            <br />
+            <a href="#"
+              ><span class="italic text-detailBrand"
+                >W've got your privacy</span
+              >
+              - Privacy policy</a
+            >
+            <br />
+            <a href="#"
+              ><span class="italic text-detailBrand">What goes around</span> -
+              Return policy</a
+            >
+            <br />
+            <a href="#"
+              ><span class="italic text-detailBrand">And then she asked..</span>
+              - FAQ's</a
+            >
+          </div>
+          <div class="pb-2">
+            <a class="font-robotoCondensed text-footer font-bold" href="#"
+              >CONTACT US</a
+            >
+            <br />
+          </div>
+          <div class="pb-10">
+            <a class="font-robotoCondensed text-footer font-bold" href="#"
+              >SITEMAP</a
+            >
+          </div>
+          <div class="flex h-[25px] w-[25] gap-5">
+            <img src="img/instagram.png" alt="Instagram icon" />
+            <img src="img/facebook.png" alt="Facebook icon" />
+            <img src="img/pinterest.png" alt="Pinterest icon" />
+          </div>
+        </div>
+        <div class="desktop:blockrelative hidden desktop:w-1/4">
+          <p
+            class="font-robotoCondensed text-[18px] desktop:absolute desktop:bottom-0"
+          >
+            &#169; Copyright - The Clay Play 2022
+          </p>
+        </div>
+        <div>
+          <h3
+            class="pt-10 font-robotoCondensed text-h3Mobile font-bold desktop:text-h3Desktop"
+          >
+            NEWSLETTER
+          </h3>
+          <p class="pb-4 font-lora text-footer">
+            Sign up and get the hottes clay news
+          </p>
+          <form
+            class="flex desktop:mt-4 desktop:mb-10 desktop:h-[45px] desktop:w-[340px]"
+          >
+            <input
+              class="w-[340px] border-[1px] bg-thirdBrand"
+              id="email"
+              name="email"
+              placeholder="Enter your email here"
+            />
+            <a
+              href="#"
+              class="bg-mainBrand px-8 py-2 text-center text-footer text-primaryCol"
+            >
+              APPLY
+            </a>
+          </form>
+          <div class="border-white mt-16 border-t-[1px]">
+            <h3
+              class="block pb-2 font-robotoCondensed text-h3Mobile font-bold desktop:hidden desktop:text-h3Desktop"
+            >
+              THE CLAY PLAY <br />
+              SHOP, ATELIER & <br />
+              WORKSHOP
+            </h3>
+
+            <h3
+              class="hidden font-robotoCondensed text-h3Mobile font-bold desktop:block desktop:text-h3Desktop"
+            >
+              THE CLAY PLAY <br />
+              SHOP, ATELIER & WORKSHOP
+            </h3>
+          </div>
+          <address class="font-lora text-footer">
+            Agtoftsvej 7 C <br />
+            6400 Sønderborg <br />Denmark <br />
+            <br />Tlf. +45 22 50 24 66 <br />
+            CVR/VAT: DK30618025
+          </address>
+          <p
+            class="pt-5 text-center font-robotoCondensed text-[18px] desktop:absolute desktop:bottom-0"
+          >
+            &#169; Copyright - The Clay Play 2022
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="main.js"></script>
+    <script type="module" src="login.js"></script>
+    <script>
+      // ------- Slidein cart -------
+      let openPanelButton = document.getElementById("open-panel");
+      let openSingleButton = document.getElementById("singlebtn");
+      let closePanelButton = document.getElementById("close-panel");
+      let closeBtnButton = document.getElementById("closecheck");
+      let cartPanel = document.querySelector(".cart-panel");
+
+      openPanelButton.onclick = () => {
+        cartPanel.classList.add("open");
+        openPanelButton.classList.add("hide");
+      };
+
+      openSingleButton.onclick = () => {
+        cartPanel.classList.add("open");
+        openSingleButton.classList.add("hide");
+      };
+
+      closePanelButton.onclick = () => {
+        cartPanel.classList.remove("open");
+        openPanelButton.classList.remove("hide");
+      };
+
+      closeBtnButton.onclick = () => {
+        cartPanel.classList.remove("open");
+        openPanelButton.classList.remove("hide");
+      };
+    </script>
+  </body>
+</html>

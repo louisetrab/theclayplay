@@ -14,45 +14,203 @@
     <!-- ------- Navigation ------- -->
     <header>
       <div
-        class="text-white h-6 w-full bg-thirdBrand text-center font-robotoCondensed text-mainBrand"
+        class="text-white h-6 w-full bg-thirdBrand text-center font-robotoCondensed text-bannerSmall text-mainBrand desktop:text-bannerBig"
       >
         <p>FREE DELIVERY FROM DKK 499 WITH SELECTED METHODS</p>
       </div>
-      <nav class="banner">
-        <div>
-          <div class="flex justify-between">
-            <a class="logov2" href="index.html"
-              ><img class="h-20 w-52" src="img/logov2.png" alt="logo" />
-            </a>
 
-            <div>
-              <ul class="flex items-center justify-center font-robotoCondensed">
-                <li>
-                  <a href="category-mugs.html">WEBSHOP &nbsp; I &nbsp;</a>
-                </li>
-                <li><a href="payflow.html">ABOUT</a></li>
-              </ul>
+      <div class="cart-panel">
+        <div class="cart-header">
+          <h3
+            class="font-robotoCondensed text-h3Mobile font-bold text-primaryCol desktop:text-h3Desktop"
+          >
+            YOUR CART
+          </h3>
+          <button id="close-panel"><p>X</p></button>
+        </div>
+
+        <div class="cart-content">
+          <div class="products">
+            <p
+              class="mb-10 border-b-[1px] font-lora text-bodySmall font-bold text-primaryCol"
+            >
+              Spend 0 kr more and get free shipping with selected shipping
+              methods
+            </p>
+            <div class="product border-b-[1px]">
+              <img width="80" src="img/flptmug1.svg" alt="Product image" />
+              <div>
+                <h4
+                  class="font-robotoCondensed text-h4 font-bold text-primaryCol"
+                >
+                  FELT LIKE PINK TODAY
+                </h4>
+                <div class="flex font-lora text-body text-primaryCol">
+                  <p>No.</p>
+                  <p>E9-11</p>
+                </div>
+                <p class="font-lora text-body text-primaryCol">1 item</p>
+                <div
+                  class="flex gap-10 font-robotoCondensed text-h4 font-bold text-primaryCol"
+                >
+                  <h4>480,00</h4>
+                  <h4>DKK</h4>
+                </div>
+                <div class="grid place-content-end">
+                  <img src="img/trash_icon.svg" alt="Delete" />
+                </div>
+              </div>
             </div>
+            <div class="grid grid-rows-4">
+              <div class="row-start-4 flex justify-between">
+                <p class="font-lora text-bodySmall text-primaryCol">
+                  Gift wrapping
+                </p>
+                <div class="flex gap-10 text-primaryCol">
+                  <h4 class="font-robotoCondensed text-h4 font-bold">DKK</h4>
+                  <p class="font-lora text-bodySmall">29.00</p>
+                </div>
+              </div>
+              <div class="row-start-5 flex justify-between border-b-[1px]">
+                <p class="font-lora text-body text-primaryCol">Subtotal</p>
+                <div class="flex gap-3 text-primaryCol">
+                  <h4 class="font-robotoCondensed text-h4 font-bold">DKK</h4>
+                  <p class="font-lora text-body">509.00</p>
+                </div>
+              </div>
+              <p class="font-lora text-bodySmall font-bold">Order Note</p>
+              <p class="font-lora text-bodySmall leading-none">
+                Shipping and taxes are calculated at checkout.
+              </p>
+            </div>
+          </div>
+          <div class="flex place-content-center gap-5">
+            <div
+              class="bg-primaryCol py-3 px-6 font-robotoCondensed text-[14px] text-mainBrand"
+            >
+              <button id="closecheck">Keep shopping</button>
+            </div>
+            <div
+              class="border-[1px] bg-mainBrand py-3 px-6 font-robotoCondensed text-[14px] text-primaryCol"
+            >
+              <button>Go to checkout</button>
+            </div>
+          </div>
+          <div>
+            <a class="font-lora text-bodySmall font-bold underline" href="#"
+              >Shipping</a
+            >
+            <a class="font-lora text-bodySmall font-bold underline" href="#"
+              >Go to checkout</a
+            >
+          </div>
+        </div>
+      </div>
 
-            <div class="flex">
-              <ul class="flex font-robotoCondensed">
-                <li>CURRENCY I &nbsp;</li>
-                <li class="mr-10">DKK</li>
-              </ul>
-              <ul class="flex">
-                <img
-                  class="h-5 w-5"
-                  src="img/searchicon.png"
-                  alt="Search Icon"
-                />
-                <img class="h-5 w-5" src="img/carticon.png" alt="Cart Icon" />
+      <nav class="navbar">
+        <a href="index.html"
+          ><img class="h-[34px] w-[160px]" src="img/logov2.svg"
+        /></a>
+        <div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              WEBSHOP
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div
+              class="dropdown-content font-robotoCondensed leading-none text-primaryCol"
+            >
+              <div class="header">
+                <h4 class="font-robotoCondensed text-h4 font-bold">
+                  ALL PRODUCTS
+                </h4>
+              </div>
+              <ul class="row">
+                <div class="column">
+                  <li><h4 class="text-h4 font-bold">INTERIOR</h4></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">CANDLEHOLDERS</a>
+                  </li>
+                  <li class="text-menuDesktop"><a href="#">LAMP SHADES</a></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">WALL DECORATION</a>
+                  </li>
+                  <li class="text-menuDesktop">
+                    <a href="#">CERAMIC CANDLES</a>
+                  </li>
+                  <li class="text-menuDesktop"><a href="#">BOWLS</a></li>
+                  <li class="text-menuDesktop"><a href="#">VASES</a></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">CERAMIC ANIMALS</a>
+                  </li>
+                  <li class="text-menuDesktop"><a href="#">PLANTERS</a></li>
+                </div>
+                <div class="column">
+                  <li><h4 class="text-h4 font-bold">FLAGS</h4></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">DANNEBROG FLAG</a>
+                  </li>
+                  <li class="text-menuDesktop"><a href="#">CLOWN FLAG</a></li>
+                  <li class="text-menuDesktop"><a href="#">NAME FLAG</a></li>
+                  <li class="text-menuDesktop"><a href="#">RAINBOW FLAG</a></li>
+                  <li class="text-menuDesktop"><a href="#">WORLS FLAG</a></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">HARLEQUIN FLAG</a>
+                  </li>
+                </div>
+                <div class="column">
+                  <li><h4 class="text-h4 font-bold">KITCHEN</h4></li>
+                  <li class="text-menuDesktop">
+                    <a href="category-mugs.html">MUGS</a>
+                  </li>
+                  <li class="text-menuDesktop">
+                    <a href="#">COFFEE DRIPPERS</a>
+                  </li>
+                  <li class="text-menuDesktop"><a href="#">WINE CUPS</a></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">KITCHEN ROLL HOLDER</a>
+                  </li>
+                </div>
+                <div class="column">
+                  <li><h4 class="text-h4 font-bold">SEASONAL</h4></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">ADVENT WREATHS</a>
+                  </li>
+                  <li class="text-menuDesktop">
+                    <a href="#">CHRISTMAS TREE</a>
+                  </li>
+                  <li><h4 class="text-h4 font-bold">ART PRINTS</h4></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">FLOWER PRINTS</a>
+                  </li>
+                  <li><h4 class="text-h4 font-bold">WORKSHOP</h4></li>
+                  <li class="text-menuDesktop">
+                    <a href="#">GLAZING WORKSHOP</a>
+                  </li>
+                </div>
+                <div>
+                  <img src="img/navimg.svg" />
+                </div>
               </ul>
             </div>
           </div>
+          <a href="about.html">ABOUT</a>
+        </div>
 
-          <button class="desktop:hidden">
-            <img src="img/burger.png" alt="burger icon" />
-          </button>
+        <div>
+          <div class="container">
+            <div class="header">
+              <div class="cart-button">
+                <button id="open-panel">
+                  <img
+                    class="mr-5 mt-3"
+                    src="img/carticon.png"
+                    alt="Go to cart"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
@@ -84,7 +242,7 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              <span>All Products</span>
+              <span>Kitchen</span>
             </div>
           </li>
           <li aria-current="page">
@@ -118,21 +276,25 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              <span>Felt like pink today</span>
+              <span class="text-inactiveCol">Felt like pink today</span>
             </div>
           </li>
         </ol>
       </section>
 
       <!-- ------- Product header ------- -->
-      <section class="grid desktop:grid-cols-12">
+      <section class="grid pt-20 desktop:grid-cols-12">
         <div class="desktop:row-1 desktop:col-start-2 desktop:col-end-5">
           <h2
             class="pb-2 text-h2Mobile font-bold leading-none text-detailBrand desktop:text-h2Desktop"
           >
             FELT LIKE PINK TODAY
           </h2>
-          <h5 class="pb-8 text-h5">A Unique piece</h5>
+          <h5 class="pb-8 text-h5 italic">A Unique piece</h5>
+          <p class="hidden pb-2 font-lora text-body desktop:block">
+            We present to you; the mug! Always there for your monday mornings,
+            late night meetings, crazy cold afternoons.
+          </p>
           <div class="hidden desktop:block">
             <h3
               class="pb-2 font-robotoCondensed text-h3Mobile font-bold desktop:text-h3Desktop"
@@ -158,7 +320,8 @@
             </p>
             <div class="py-4">
               <button
-                class="h-[54px] w-[257px] place-self-center bg-primaryCol text-mainBrand"
+                id="singlebtn"
+                class="h-[54px] w-[299px] place-self-center bg-primaryCol text-mainBrand"
               >
                 ADD TO CART
               </button>
@@ -167,6 +330,119 @@
               <a href="#"
                 ><img src="img/wishlist.svg" alt="Wishlist link" />
               </a>
+            </div>
+
+            <div class="hidden desktop:block">
+              <div class="flex pb-4">
+                <img
+                  class="h-6 w-6"
+                  src="img/deliveryicon.png"
+                  alt="Truck icon"
+                />
+                <p>Delivery within 2-5 weekdays</p>
+              </div>
+              <div class="flex pb-4">
+                <img
+                  class="h-6 w-6"
+                  src="img/packageicon.png"
+                  alt="Package icon"
+                />
+                <p>
+                  Free delivery from DKK 499 with <br />
+                  selected shipping methods
+                </p>
+              </div>
+              <div class="flex border-b-[1px] pb-4">
+                <img
+                  class="h-6 w-6"
+                  src="img/returnicon.png"
+                  alt="Return icon"
+                />
+                <p>30 days return</p>
+              </div>
+              <p class="block pb-2 font-lora desktop:hidden">
+                We present to you; the mug! Always there for your monday
+                mornings, late night meetings, crazy cold afternoons.
+              </p>
+
+              <div class="font-lora desktop:pb-40">
+                <button
+                  type="button"
+                  class="collapsible mt-10 flex w-full cursor-pointer justify-between border-b-[1px] p-4 text-left font-bold"
+                >
+                  Products Description
+                  <img src="img/foldedicon.png" alt="Arrow icon" />
+                </button>
+                <div class="content hidden overflow-hidden px-4 pt-5">
+                  <p>Measurements:</p>
+                  <p>
+                    Height 8cm <br />
+                    Width 8cm <br />
+                    Contains approx 4dl
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  class="collapsible flex w-full cursor-pointer justify-between border-b-[1px] p-4 text-left font-bold"
+                >
+                  Shipping
+                  <img src="img/foldedicon.png" alt="Arrow icon" />
+                </button>
+                <div class="content hidden overflow-hidden px-4 pt-5">
+                  <p class="pb-5">
+                    "Info about shipping cost <br />
+                    depending on country."
+                  </p>
+                  <p>
+                    The average time of delivery of <br />
+                    this product is 2-5 days, but it <br />
+                    can differ (For Europe see <br />
+                    delivery options). We'll notify <br />
+                    you upon order with a closer <br />
+                    expected date of delivery. <br />
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  class="collapsible flex w-full cursor-pointer justify-between border-b-[1px] p-4 text-left font-bold"
+                >
+                  Returns
+                  <img src="img/foldedicon.png" alt="Arrow icon" />
+                </button>
+                <div class="content hidden overflow-hidden px-4 pt-5">
+                  <p>
+                    When you've bought products <br />
+                    from us, we most surely know, <br />
+                    you'll fall in love with it. But, <br />
+                    some loves aren't everlasting - <br />
+                    and if you regret your purchase, <br />
+                    you always have two weeks to <br />
+                    cancel it when buying from our <br />
+                    webshop.
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  class="collapsible flex w-full cursor-pointer justify-between border-b-[1px] p-4 text-left font-bold"
+                >
+                  Care
+                  <img src="img/foldedicon.png" alt="Arrow icon" />
+                </button>
+                <div class="content pt5 hidden overflow-hidden px-4">
+                  <p>
+                    Handle this with most loving <br />
+                    care. Love it like it's your baby. <br />
+                    Hold it tight. Not so tight! It's <br />
+                    fragile, you know. We really do <br />
+                    recommend you don't use it in <br />
+                    the microwave. But we also<br />
+                    know, on a busy day, dish <br />
+                    washing machines are lifesaving. <br />
+                    So of course, you can wash it <br />
+                    there.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -269,7 +545,7 @@
             </p>
             <div class="py-4">
               <button
-                class="h-[54px] w-[257px] place-self-center bg-primaryCol text-mainBrand"
+                class="singlebtn h-[54px] w-[257px] place-self-center bg-primaryCol text-mainBrand"
               >
                 ADD TO CART
               </button>
@@ -283,7 +559,7 @@
         </div>
 
         <div class="pt-6 font-lora desktop:col-start-2 desktop:col-end-6">
-          <div>
+          <div class="block desktop:hidden">
             <div class="flex pb-4">
               <img
                 class="h-6 w-6"
@@ -320,7 +596,7 @@
                 Products Description
                 <img src="img/foldedicon.png" alt="Arrow icon" />
               </button>
-              <div class="content hidden overflow-hidden px-4">
+              <div class="content hidden overflow-hidden px-4 pt-5">
                 <p>Measurements:</p>
                 <p>
                   Height 8cm <br />
@@ -335,8 +611,8 @@
                 Shipping
                 <img src="img/foldedicon.png" alt="Arrow icon" />
               </button>
-              <div class="content hidden overflow-hidden px-4">
-                <p>
+              <div class="content hidden overflow-hidden px-4 pt-5">
+                <p class="pb-5">
                   "Info about shipping cost <br />
                   depending on country."
                 </p>
@@ -356,7 +632,7 @@
                 Returns
                 <img src="img/foldedicon.png" alt="Arrow icon" />
               </button>
-              <div class="content hidden overflow-hidden px-4">
+              <div class="content hidden overflow-hidden px-4 pt-5">
                 <p>
                   When you've bought products <br />
                   from us, we most surely know, <br />
@@ -375,7 +651,7 @@
                 Care
                 <img src="img/foldedicon.png" alt="Arrow icon" />
               </button>
-              <div class="content hidden overflow-hidden px-4">
+              <div class="content pt5 hidden overflow-hidden px-4">
                 <p>
                   Handle this with most loving <br />
                   care. Love it like it's your baby. <br />
@@ -655,6 +931,7 @@
     <script type="module" src="main.js"></script>
     <script type="module" src="login.js"></script>
     <script>
+      // ------- Image carousel -------
       let slideIndex = 1;
       showSlides(slideIndex);
 
@@ -687,6 +964,33 @@
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
       }
+
+      // ------- Slidein cart -------
+      let openPanelButton = document.getElementById("open-panel");
+      let openSingleButton = document.getElementById("singlebtn");
+      let closePanelButton = document.getElementById("close-panel");
+      let closeBtnButton = document.getElementById("closecheck");
+      let cartPanel = document.querySelector(".cart-panel");
+
+      openPanelButton.onclick = () => {
+        cartPanel.classList.add("open");
+        openPanelButton.classList.add("hide");
+      };
+
+      openSingleButton.onclick = () => {
+        cartPanel.classList.add("open");
+        openSingleButton.classList.add("hide");
+      };
+
+      closePanelButton.onclick = () => {
+        cartPanel.classList.remove("open");
+        openPanelButton.classList.remove("hide");
+      };
+
+      closeBtnButton.onclick = () => {
+        cartPanel.classList.remove("open");
+        openPanelButton.classList.remove("hide");
+      };
     </script>
   </body>
 </html>
